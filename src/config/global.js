@@ -1,17 +1,22 @@
 export default {
   global: {
-    componenteFormativo: 'NOMBRE DEL COMPONENTE FORMATIVO',
-    descripcionCurso: 'BREVE DESCRIPCIÓN',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
+    componenteFormativo: 'Desarrollo de aplicaciones web con Java',
+    descripcionCurso:
+      'El componente proporciona una guía sobre tecnologías y frameworks en el ecosistema Java. Cubre Java con JDBC para la conectividad de bases de datos, Servlets y JSP para el desarrollo web, React JS para interfaces de usuario, Hibernate para ORM, y Spring Framework para aplicaciones empresariales, destacando la inyección de dependencias y la configuración simplificada con Spring Boot.',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.svg'),
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.png'),
       },
       {
-        clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
+        clases: ['banner-principal-decorativo-2', 'd-none', 'd-lg-block'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.png'),
+      },
+      {
+        clases: ['banner-principal-decorativo-3', 'd-none', 'd-lg-block'],
+        imagen: require('@/assets/curso/portada/banner-principal-decorativo-3.png'),
       },
     ],
   },
@@ -31,28 +36,122 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Java con JDBC',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
+            titulo: 'Clases e interfaces Java',
             hash: 't_1_1',
+          },
+          {
+            numero: '1.2',
+            titulo: 'Conexión a base de datos desde aplicación Java',
+            hash: 't_1_2',
           },
         ],
       },
-
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Titulo de primer nivel',
+        titulo: '<i>Servlets</i> y JSP',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '2.1',
+            titulo: 'Introducción a <i>Servlets</i>',
+            hash: 't_2_1',
+          },
+          {
+            numero: '2.2',
+            titulo: 'Formulario HTML con <i>Servlets</i>',
+            hash: 't_2_2',
+          },
+          {
+            numero: '2.3',
+            titulo: 'HTTP <i>Session</i>',
+            hash: 't_2_3',
+          },
+          {
+            numero: '2.4',
+            titulo: 'Elementos de JSP',
+            hash: 't_2_4',
+          },
+          {
+            numero: '2.5',
+            titulo: 'MVC',
+            hash: 't_2_5',
+          },
+        ],
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Fundamentos de React JS',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '3.1',
+            titulo: 'Instalando React JS',
+            hash: 't_3_1',
+          },
+          {
+            numero: '3.2',
+            titulo: 'Crear un proyecto',
+            hash: 't_3_2',
+          },
+          {
+            numero: '3.3',
+            titulo: 'Propiedades y estados de los componentes',
+            hash: 't_3_3',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema4',
+        numero: '4',
+        titulo: 'Hibernate',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '4.1',
+            titulo: 'Operaciones básicas',
+            hash: 't_4_1',
+          },
+          {
+            numero: '4.2',
+            titulo: 'Asociaciones',
+            hash: 't_4_2',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema5',
+        numero: '5',
+        titulo: 'Spring',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '5.1',
+            titulo: 'Introducción',
+            hash: 't_5_1',
+          },
+          {
+            numero: '5.2',
+            titulo: 'Spring Data',
+            hash: 't_5_2',
+          },
+          {
+            numero: '5.3',
+            titulo: 'Spring Boot y MySQL',
+            hash: 't_5_3',
+          },
+          {
+            numero: '5.4',
+            titulo: 'Validaciones',
+            hash: 't_5_4',
+          },
+        ],
       },
     ],
     subMenu: [

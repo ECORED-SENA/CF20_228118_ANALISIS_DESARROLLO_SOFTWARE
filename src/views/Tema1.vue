@@ -64,8 +64,8 @@
                   table
                     thead
                       tr
-                        th(style="width: 25%") Base de Datos
-                        th Página oficial para descarga de JDBC
+                        th.text-white(style="width: 25%") Base de Datos
+                        th.text-white Página oficial para descarga de JDBC
                     tbody
                       tr
                         td Mysql

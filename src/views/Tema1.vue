@@ -2,25 +2,25 @@
 .curso-main-container.pb-3
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 1
       h1 Java con JDBC
     .row.bg-c3
       .col-12
         .px-5
-          p.mb-5 Cuando se habla de JDBC (#[i Java Database Connectivity]), se hace referencia a un driver que encapsula un conjunto de clases e interfaces escritas en Java, creadas para establecer conexiones, enviar sentencias SQL y procesar los datos resultantes sobre bases de datos relacionales.
+          p.mb-5(data-aos="fade-right") Cuando se habla de JDBC (#[i Java Database Connectivity]), se hace referencia a un driver que encapsula un conjunto de clases e interfaces escritas en Java, creadas para establecer conexiones, enviar sentencias SQL y procesar los datos resultantes sobre bases de datos relacionales.
           .row.justify-content-center.mb-5
             .col-lg-8
-              .p-4.bg-c4
+              .p-4.bg-c4(data-aos="fade-down")
                 .titulo-sexto.color-acento-contenido.mb-4
                   p.mb-0 #[b Figura 1.] Java con JDBC
                 figure.d-none.d-lg-block
                   img(src="@/assets/curso/tema1/img2.svg", style="width: 600px", alt="Diagrama que representa la conexión entre una aplicación Java utilizando JDBC y un sistema gestor de bases de datos relacionales, detallando la comunicación entre el equipo del cliente y el servidor de la base de datos.").m-auto
                 figure.d-block.d-lg-none
                   img(src="@/assets/curso/tema1/img2m.svg", style="width: 240px", alt="Diagrama que representa la conexión entre una aplicación Java utilizando JDBC y un sistema gestor de bases de datos relacionales, detallando la comunicación entre el equipo del cliente y el servidor de la base de datos.").m-auto
-          p.mb-5 En términos más generales, JDBC es uno de los puentes que puede ser utilizado en Java para comunicar una aplicación Java con un servidor de bases de datos relacionales. Trabajar con conexiones a bases de datos mediante JDBC implica realizar cuidadosamente las siguientes acciones:
-          .row.justify-content-center.mb-4.mb-lg-5
+          p.mb-5(data-aos="fade-right") En términos más generales, JDBC es uno de los puentes que puede ser utilizado en Java para comunicar una aplicación Java con un servidor de bases de datos relacionales. Trabajar con conexiones a bases de datos mediante JDBC implica realizar cuidadosamente las siguientes acciones:
+          .row.justify-content-center.mb-4.mb-lg-5(data-aos="fade-left")
             .col-md-6.col-lg.mb-4.mb-lg-0
               .p-4.bg-c5
                 figure.mb-4
@@ -43,7 +43,7 @@
                 p.mb-0 Conocer las características de la base de datos a manipular, ya que esto podría afectar las consultas.
           .row.justify-content-center.mb-5
             .col-lg-10
-              .p-4.bg-c6
+              .p-4.bg-c6(data-aos="fade-down")
                 .row.align-items-center
                   .col-md-auto.mb-4.mb-md-0
                     figure
@@ -51,12 +51,12 @@
                   .col
                     p.text-white.mb-0 #[b Tenga presente]
                     p.text-white.mb-0 Cada sistema gestor de base de datos (SGBD) provee su propio JDBC para la manipulación de sus sistemas con la aplicación Java. Dependiendo de la base de datos a la que se desee conectar, se debe descargar el driver J DBC correspondiente.
-          p.mb-5 La siguiente tabla muestra las direcciones oficiales para la descarga del driver JDBC para las bases de datos relacionales más comúnmente utilizadas en la industria del software.
+          p.mb-5(data-aos="fade-right") La siguiente tabla muestra las direcciones oficiales para la descarga del driver JDBC para las bases de datos relacionales más comúnmente utilizadas en la industria del software.
           .row.align-items-center
-            .col-lg-3.mb-4.mb-lg-0
+            .col-lg-3.mb-4.mb-lg-0(data-aos="fade-right")
               figure
                 img(src="@/assets/curso/tema1/img2.png", style="width: 300px", alt="").m-auto
-            .col-lg-9
+            .col-lg-9(data-aos="fade-left")
               .p-4.p-lg-5.bg-c4
                 .titulo-sexto.color-acento-contenido.mb-4
                   p.mb-0 #[b Tabla 1.] #[i Drivers] JDBC para SGBD
@@ -92,14 +92,14 @@
     .titulo-segundo.color-acento-contenido
       h2 1.1 Clases e interfaces Java
     .row.mb-5
-      .col-auto.d-none.d-md-block
+      .col-auto.d-none.d-md-block(data-aos="fade-right")
         figure.mt-1
           img(src="@/assets/curso/tema1/img9.svg", style="width: 70px", alt="").m-auto
-      .col
+      .col(data-aos="fade-left")
         p.mb-0 Además de disponer del driver JDBC correspondiente para la base de datos que se desea conectar, se requiere un conjunto adicional de clases e interfaces Java para hacer uso del driver. Para ello, es necesario importar los paquetes java.sql o javax.sql. A continuación, se describen algunas de las clases más importantes dentro de estas librerías, y otros elementos, para gestionar correctamente una base de datos por medio de JDBC.
     .row.justify-content-center.mb-5
       .col-lg-10
-        TabsA.color-acento-botones
+        TabsA.color-acento-botones(data-aos="fade-up")
           .tarjeta.color-acento-botones.p-4(titulo="DriverManager")
             p #[b DriverManager]
             p.mb-0 Clase estática que permite la gestión del driver JDBC disponible para la aplicación. Por medio del método getConnection, crea una instancia de tipo Connection mediante la cual se realiza el flujo de envío y recibo de información hacia y desde la base de datos destino.
@@ -116,10 +116,10 @@
             p #[b El método next()]
             p.mb-0 Además de desplazarse una posición de forma lineal dentro de la estructura, también devuelve como resultado un valor booleano para informar si el desplazamiento realizado encontró, o no, un conjunto de datos válidos. Así es posible determinar cuándo se alcanza el final de los elementos.
     .row
-      .col-lg-3.mb-4.mb-lg-0
+      .col-lg-3.mb-4.mb-lg-0(data-aos="fade-right")
         figure
           img(src="@/assets/curso/tema1/img3.png", style="width: 320px", alt="").m-auto
-      .col-lg-9
+      .col-lg-9(data-aos="fade-left")
         .tarjeta.color-primario.p-3
           .row.justify-content-around.align-items-center
             .col-3.col-sm-2
@@ -137,13 +137,13 @@
     #t_1_2
     .titulo-segundo.color-acento-contenido
       h2 1.2 Conexión a base de datos desde aplicación Java
-    p.mb-0 Garantizar la conexión a una base de datos requiere la aplicación concreta de los pasos ya explicados. 
-    p.mb-5 Los pasos que deben realizarse para garantizar una conexión a base de datos desde una aplicación Java, utilizando JDBC, son:
+    p.mb-0(data-aos="fade-right") Garantizar la conexión a una base de datos requiere la aplicación concreta de los pasos ya explicados. 
+    p.mb-5(data-aos="fade-right") Los pasos que deben realizarse para garantizar una conexión a base de datos desde una aplicación Java, utilizando JDBC, son:
     .row.align-items-center.mb-5
-      .col-lg-4.mb-4.mb-lg-0
+      .col-lg-4.mb-4.mb-lg-0(data-aos="fade-right")
         figure
           img(src="@/assets/curso/tema1/img4.png", style="width: 390px", alt="").m-auto
-      .col-lg-8
+      .col-lg-8(data-aos="fade-left")
         .p-4.bg-c7
           ol.lista-ol--cuadro.lista-ol.mb-0
             li.d-flex
@@ -186,10 +186,10 @@
                 span 8
               |
               p.mb-0 Procesar los resultados de la sentencia ejecutada por medio de un #[b ResultSet] y sus métodos de apoyo.
-    p.mb-5 Para afianzar los conocimientos logrados hasta este punto, se recomienda revisar el video propuesto a continuación. En este, se presenta un ejemplo sencillo y se describen las prácticas de cada paso descrito.
+    p.mb-5(data-aos="fade-right") Para afianzar los conocimientos logrados hasta este punto, se recomienda revisar el video propuesto a continuación. En este, se presenta un ejemplo sencillo y se describen las prácticas de cada paso descrito.
     .row.justify-content-center
       .col-lg-10
-        figure
+        figure(data-aos="fade-left")
           .video
             iframe(width="560" height="315" src="https://www.youtube.com/embed/3fzWQ5i_4RU?si=LpvG6xgmcn-Xz7gZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 

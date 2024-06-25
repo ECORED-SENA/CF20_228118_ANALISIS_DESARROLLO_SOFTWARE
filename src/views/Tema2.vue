@@ -2,36 +2,36 @@
 .curso-main-container.pb-3
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 2
       h1 #[i Servlets] y JSP
     .row.mb-5
-      .col-auto.d-none.d-md-block
+      .col-auto.d-none.d-md-block(data-aos="fade-right")
         figure.mt-1
           img(src="@/assets/curso/tema1/img9.svg", style="width: 70px", alt="").m-auto
-      .col
+      .col(data-aos="fade-left")
         p.mb-0 Los Servlets y los JSP (Java Server Pages), son tecnologías que se utilizan para realizar ejecuciones en servidores Java, permitiendo extender los servicios de un servidor web. (Berzal, 2007)
     .row.justify-content-center.mb-5
       .col-lg-8
-        .p-4.bg-c4
+        .p-4.bg-c4(data-aos="fade-down")
           .titulo-sexto.color-acento-contenido.mb-4
             p.mb-0 #[b Figura 2]. Java con JDBC
           figure
             img(src="@/assets/curso/tema2/img1.svg", style="width: 600px", alt="Diagrama de una aplicación web que describe cómo un ServletFilter gestiona las solicitudes HTTP hacia Servlets, JSPs y archivos estáticos dentro de la aplicación.").m-auto
     .row.mb-5
       .col-12
-        .p-4.bg-c7
+        .p-4.bg-c7(data-aos="fade-left")
           .row.align-items-center
             .col-md-auto.mb-4.mb-md-0
               figure
                 img(src="@/assets/curso/tema2/img2.svg", style="width: 100px", alt="").m-auto
             .col
               p.mb-0 Un ejemplo sencillo de lo que se puede hacer con JSP y Servlet es que, por medio de una página JSP, se puede crear un formulario que contenga una serie de datos como: primer nombre, segundo nombre, edad y correo. Luego, a través de un servlet, se realiza el envío de estos registros para que sean almacenados en una base de datos y, finalmente, el usuario pueda acceder a esta información.
-    p.mb-5 Conozca, a continuación, los procesos principales de estas tecnologías y algunos aspectos generales del uso de JSP y Servlet:
+    p.mb-5(data-aos="fade-right") Conozca, a continuación, los procesos principales de estas tecnologías y algunos aspectos generales del uso de JSP y Servlet:
     .row
       .col-12
-        .p-4.p-lg-5.bg-c12
+        .p-4.p-lg-5.bg-c12(data-aos="fade-left")
           .tarjeta.tarjeta--azul
             .p-4.p-lg-5
               SlyderA(tipo="b")
@@ -85,17 +85,17 @@
     Separador
     #t_2_1
     .titulo-segundo.color-acento-contenido
-      h2 2.1 Introducción a servlets
-    p.mb-5 Servlet es un programa que se lleva a cabo en una aplicación o servidor web; se emplea como una capa que intercede entre la base de datos y el servidor de peticiones HTTP, por medio de un navegador web o cualquier otro cliente HTTP (Gómez, 2017).
+      h2 2.1 Introducción a #[i servlets]
+    p.mb-5(data-aos="fade-right") Servlet es un programa que se lleva a cabo en una aplicación o servidor web; se emplea como una capa que intercede entre la base de datos y el servidor de peticiones HTTP, por medio de un navegador web o cualquier otro cliente HTTP (Gómez, 2017).
     .row.justify-content-center.mb-5
       .col-lg-8
-        .p-4.bg-c4
+        .p-4.bg-c4(data-aos="fade-down")
           .titulo-sexto.color-acento-contenido.mb-4
             p.mb-0 #[b Figura 3]. Arquitectura de un servlet
           figure
             img(src="@/assets/curso/tema2/img4.svg", style="width: 350px", alt="Diagrama conceptual que explica cómo un navegador web interactúa con un programa Servlet mediante el protocolo HTTP, conectado a un servidor de base de datos.").m-auto
-    p.mb-5 A continuación, se presentan algunas ventajas de utilizar servlets:
-    .row.justify-content-center.mb-4.mb-lg-5
+    p.mb-5(data-aos="fade-right") A continuación, se presentan algunas ventajas de utilizar servlets:
+    .row.justify-content-center.mb-4.mb-lg-5(data-aos="fade-up")
       .col-md-6.col-lg.mb-4.mb-lg-0
         .p-4.bg-c14
           figure.mb-4
@@ -116,9 +116,9 @@
           figure.mb-4
             img(src="@/assets/curso/tema2/img8.svg", style="width: 80px", alt="alt")
           p.mb-0 #[b Fiabilidad:] resguardan los recursos del servidor gracias a la seguridad proporcionada por Java.
-    p.mb-5 Las tareas principales de un servlet son:
+    p.mb-5(data-aos="fade-right") Las tareas principales de un servlet son:
     .row.align-items-center.mb-5
-      .col-lg-8.order-2.order-lg-1
+      .col-lg-8.order-2.order-lg-1(data-aos="fade-right")
         .row.mb-2
           .col-md-auto.bg-c15
             .p-3
@@ -164,7 +164,7 @@
             .p-3
               p.mb-0 #[b Envíos de respuesta]
               p.mb-0 Realiza envíos de respuesta HTTP implícita al cliente (navegador).
-      .col-lg-4.mb-4.mb-lg-0.order-1.order-lg-2
+      .col-lg-4.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema2/img5.png', style='width: 340px', alt='').m-auto
     .row.mb-4.pt-4(data-aos="fade-down")
@@ -177,20 +177,20 @@
             .col
               h3.text-white Ciclo de vida de un Servlet
     .row.mb-5
-      .col-auto.d-none.d-md-block
+      .col-auto.d-none.d-md-block(data-aos="fade-right")
         figure.mt-1
           img(src="@/assets/curso/tema1/img9.svg", style="width: 70px", alt="").m-auto
-      .col
+      .col(data-aos="fade-left")
         p.mb-0 A diferencia de las clases en Java, que inician con un método main(), en los #[i servlets] se invocan ciertos métodos al recibir peticiones. A esta metodología se le llama ciclo de vida de un #[i servlet] y se compone de tres métodos: #[i init], #[i service] y #[i destroy].
     .row.justify-content-center.mb-5
       .col-lg-8
-        .p-4.bg-c4
+        .p-4.bg-c4(data-aos="fade-up")
           .titulo-sexto.color-acento-contenido.mb-4
             p.mb-0 #[b Figura 4]. Ciclo de vida de un #[i Servlets]
           figure
             img(src="@/assets/curso/tema2/img16.svg", style="width: 500px", alt="Flujo de proceso de un Servlet en Java, detallando el ciclo de vida desde la inicialización hasta la destrucción, incluyendo los métodos service, doGet y doPost.").m-auto
-    p Conocer el ciclo de vida de un Servlet; procurar llevar registro, en la libreta personal de apuntes, de los aspectos más importantes y destacados.
-    .row.bg-c18.mb-5
+    p(data-aos="fade-right") Conocer el ciclo de vida de un Servlet; procurar llevar registro, en la libreta personal de apuntes, de los aspectos más importantes y destacados.
+    .row.bg-c18.mb-5(data-aos="fade-left")
       .col-12
         .p-5
           .row.justify-content-center
@@ -221,9 +221,9 @@
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
               h3.text-white Ejemplo de Servlet
-    p.mb-5 El siguiente código presenta un "Hola Mundo" en un servlet, con sus métodos de ciclo de vida.
+    p.mb-5(data-aos="fade-right") El siguiente código presenta un "Hola Mundo" en un servlet, con sus métodos de ciclo de vida.
     .row.align-items-center.mb-5
-      .col-lg-8.order-2.order-lg-1
+      .col-lg-8.order-2.order-lg-1(data-aos="fade-right")
         .row
           .col-12
             .px-4.py-3.bg-c20
@@ -247,15 +247,15 @@
                 p.mb-0 12.        }
                 p.mb-0 13.   public void destroy ()
                 p.mb-0 14.   {.}
-      .col-lg-4.mb-4.mb-lg-0.order-1.order-lg-2
+      .col-lg-4.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema2/img6.png', style='width: 380px', alt='').m-auto
-    p.mb-5 En el código anterior, se hace lo siguiente:
+    p.mb-5(data-aos="fade-right") En el código anterior, se hace lo siguiente:
     .row.mb-5
-      .col-auto.pe-0.d-none.d-lg-block
+      .col-auto.pe-0.d-none.d-lg-block(data-aos="fade-right")
         figure
           img(src='@/assets/curso/tema2/img7.png', style='width: 280px', alt='').m-auto
-      .col.bg-c22
+      .col.bg-c22(data-aos="fade-left")
         .p-3
           .row.align-items-center.mb-3
             .col-auto.pe-0
@@ -284,13 +284,13 @@
                 img(src='@/assets/curso/tema2/img24.svg', style='width: 50px', alt='').m-auto
             .col
               p.mb-0 Se sobrescribe el método #[b doGet] para crear la lógica de respuesta al usuario, se establece el formato de la respuesta en HTML y se ctEa el contenido de la respuesta.
-    p.mb-5 Explore el vídeo que se propone para ahondar en los aspectos más importantes de Servlet.
+    p.mb-5(data-aos="fade-right") Explore el vídeo que se propone para ahondar en los aspectos más importantes de Servlet.
     .row.bg-c24
       .col-12
         .px-5
           .row.justify-content-center
             .col-lg-10
-              figure
+              figure(data-aos="fade-down")
                 .video
                   iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
           Separador
@@ -298,24 +298,24 @@
           .titulo-segundo.color-acento-contenido
             h2 2.2 Formularios HTML con #[i Servlets]
           .row.align-items-center.mb-5
-            .col-lg-9.order-2.order-lg-1
+            .col-lg-9.order-2.order-lg-1(data-aos="fade-right")
               p Las páginas web contienen formularios HTML para la solicitud de información al usuario. El proceso de recolección de datos y respuesta de este formulario se debe realizar por medio de un programa. Esto lo hace un servlet que recoge las peticiones de un formulario y las procesa.
               p La declaración de un formulario HTML se hace por medio de la etiqueta &lt;form>, donde es primordial que se especifique el método por el que se realizará el envío de los datos, los cuales pueden ser get o post.
               p.mb-0 A continuación, se presentan los aspectos más relevantes en lo relativo a formularios HTML con servlets:
-            .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2
+            .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
               figure
                 img(src='@/assets/curso/tema2/img9.png', style='width: 330px', alt='').m-auto
           .row.justify-content-center
             .col-lg-10
-              figure
+              figure(data-aos="fade-down")
                 .video
                   iframe(width="560" height="315" src="https://www.youtube.com/embed/6KkrakwqL7Y?si=sn2nMD7qnRQdDPGm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
     Separador
     #t_2_3
     .titulo-segundo.color-acento-contenido
-      h2 2.3 HTTP Session
+      h2 2.3 HTTP #[i Session]
     .row.align-items-center.mb-5
-      .col-lg-9.order-2.order-lg-1
+      .col-lg-9.order-2.order-lg-1(data-aos="fade-right")
         p Las sesiones se crean para hacer un seguimiento y memorizar las acciones de un usuario en un sitio web. Las sesiones en Java permiten guardar información entre las diversas peticiones HTTP, utilizando una clase que realiza el seguimiento de las sesiones; estos objetos también se almacenan del lado del servidor.
         .row.mb-3
           .col-12
@@ -335,29 +335,29 @@
               p #[b.txt-c1 setAttribute()] Establece un objeto en la sesión, empleando un nombre explícito.
               p #[b.txt-c1 getAttribute()] Retorna el objeto que fue asignado a la sesión, identificado con el nombre que le fue asignado.
               p.mb-0 #[b.txt-c1 setInactiveInterval()] Detalla el mayor tiempo que puede existir entre las peticiones continuas del cliente.
-      .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2
+      .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema2/img10.png', style='width: 330px', alt='').m-auto
     .row.justify-content-center.mb-5
       .col-lg-10
-        .p-4.bg-c6
+        .p-4.bg-c6(data-aos="fade-down")
           .row.align-items-center
             .col-md-auto.mb-4.mb-md-0
               figure
                 img(src='@/assets/curso/tema2/img28.svg', style='width: 70px', alt='').m-auto
             .col
               p.text-white.mb-0 El método utilizado para obtener la sesión de un usuario es getSession () este método regresa una interfaz de tipo HttpSession, Esta interfaz está dentro del paquete javax. servlet.http y es usada por el contenedor de páginas JSP que permite la creación de una sesión entre el cliente y el servidor.
-    p.mb-5 A continuación, se puede conocer el funcionamiento básico de las sesiones:
+    p.mb-5(data-aos="fade-right") A continuación, se puede conocer el funcionamiento básico de las sesiones:
     .row.justify-content-center.mb-5
       .col-lg-8
-        .p-4.bg-c4
+        .p-4.bg-c4(data-aos="fade-down")
           .titulo-sexto.color-acento-contenido.mb-4
             p.mb-0 #[b Figura 5]. HTTP Session
           figure.d-none.d-lg-block
             img(src="@/assets/curso/tema2/img29.svg", style="width: 800px", alt="Ilustración de cómo diferentes usuarios interactúan con una aplicación JSP que administra sesiones, detallando operaciones como setAttribute y getAttribute.").m-auto
           figure.d-block.d-lg-none
             img(src="@/assets/curso/tema2/img29m.svg", style="width: 350px", alt="Ilustración de cómo diferentes usuarios interactúan con una aplicación JSP que administra sesiones, detallando operaciones como setAttribute y getAttribute.").m-auto
-    .row.justify-content-center
+    .row.justify-content-center(data-aos="fade-right")
       .col-10.col-md-6.col-lg-4.mb-4
         .tarjeta-avatar
           img(src='@/assets/curso/tema2/img30.svg' alt='AvatarTop')
@@ -405,13 +405,13 @@
     .titulo-segundo.color-acento-contenido
       h2 2.4 Elementos de JSP
     .row.mb-5
-      .col-lg-10.order-2.order-lg-1
+      .col-lg-10.order-2.order-lg-1(data-aos="fade-right")
         p.mb-0 Las sesiones se crean para hacer un seguimiento y memorizar las acciones de un usuario en un sitio web. Las sesiones en Java permiten guardar información entre las diversas peticiones HTTP, utilizando una clase que realiza el seguimiento de las sesiones; estos objetos también se almacenan del lado del servidor. Para poder hacer uso de este objeto, es necesario obtener un objeto de la sesión para poder escribir en él, eliminarlo o leerlo, incluso después de que la sesión haya sido cerrada.
-      .col-lg-2.mb-4.mb-lg-0.order-1.order-lg-2
+      .col-lg-2.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema2/img36.svg', style='width: 190px', alt='').m-auto
     .row.mb-5
-      .col-lg-9.order-2.order-lg-1
+      .col-lg-9.order-2.order-lg-1(data-aos="fade-right")
         TabsA.color-acento-botones
           .tarjeta.color-acento-botones.p-4(titulo="Códigos")
             figure.mb-3
@@ -448,30 +448,30 @@
               img(src='@/assets/curso/tema2/img42.svg', style='width: 120px', alt='')
             p #[b Declaraciones]
             p.mb-0 Inician con #[b <%! y terminan con %>]. Se pueden escribir varias líneas de código y realizar declaraciones. Ejemplo: #[b <%! private int total; public int suma(int a, int b) { total = a + b; return total; } %>].
-      .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2
+      .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema2/img11.png', style='width: 330px', alt='').m-auto
-    p.mb-5 Para afianzar sus conocimientos en elementos JSP, le invitamos a revisar el siguiente vídeo.
+    p.mb-5(data-aos="fade-right") Para afianzar sus conocimientos en elementos JSP, le invitamos a revisar el siguiente vídeo.
     .row.justify-content-center
       .col-lg-10
-        figure
+        figure(data-aos="fade-up")
           .video
             iframe(width="560" height="315" src="https://www.youtube.com/embed/1TNloswji-4?si=hpP6_CWbeNiTL18G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
     Separador
     #t_2_5
     .titulo-segundo.color-acento-contenido
       h2 2.5 MVC
-    p El MVC (Modelo-Vista-Controlador) es un patrón de diseño estándar que se utiliza para crear aplicaciones dinámicas con Java. Consiste en separar la parte lógica de los proyectos de la parte visual, integrando servlets y JSP. En este patrón, los servlets se encargan de la parte lógica y los JSP de la parte visual.
-    p División de la aplicación realizada por el patrón:
+    p(data-aos="fade-right") El MVC (Modelo-Vista-Controlador) es un patrón de diseño estándar que se utiliza para crear aplicaciones dinámicas con Java. Consiste en separar la parte lógica de los proyectos de la parte visual, integrando servlets y JSP. En este patrón, los servlets se encargan de la parte lógica y los JSP de la parte visual.
+    p(data-aos="fade-right") División de la aplicación realizada por el patrón:
     .row.justify-content-center.mb-5
       .col-lg-8
-        .p-4.bg-c4
+        .p-4.bg-c4(data-aos="fade-up")
           .titulo-sexto.color-acento-contenido.mb-4
             p.mb-0 #[b Figura 5]. Arquitectura MVC
           figure
             img(src="@/assets/curso/tema2/img43.svg", style="width: 600px", alt="alternativo: Diagrama del flujo de una aplicación web, detallando la interacción entre el cliente, el controlador (Servlet), la vista (JSP) y el modelo (base de datos).").m-auto
     .row
-      .col-lg.m-2
+      .col-lg.m-lg-2.mb-4.mb-lg-0(data-aos="fade-right")
         .row.h-100
           .col-md-auto.bg-c15
             .p-3
@@ -481,7 +481,7 @@
             .p-3
               p.mb-0 #[b El modelo]
               p.mb-0 Realiza el almacenamiento y la manipulación de los datos.
-      .col-lg.m-2
+      .col-lg.m-lg-2.mb-4.mb-lg-0(data-aos="fade-left")
         .row
           .col-md-auto.bg-c15
             .p-3
@@ -491,7 +491,7 @@
             .p-3
               p.mb-0 #[b La vista]
               p.mb-0 Se encarga de la presentación con la que el usuario realizará la interacción, habitualmente en HTML.
-      .col-lg.m-2
+      .col-lg.m-lg-2.mb-4.mb-lg-0(data-aos="fade-right")
         .row.h-100
           .col-md-auto.bg-c15
             .p-3

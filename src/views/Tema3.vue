@@ -2,13 +2,13 @@
 .curso-main-container.pb-3
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
-    .titulo-principal.color-acento-contenido
+    .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 3
       h1 Fundamentos de React JS
-    p.mb-5 React JS es una nueva tecnología importante para la construcción de software en su componente Front-end, que requiere tener en cuenta algunas consideraciones, como se pueden conocer a continuación:
+    p.mb-5(data-aos="fade-right") React JS es una nueva tecnología importante para la construcción de software en su componente Front-end, que requiere tener en cuenta algunas consideraciones, como se pueden conocer a continuación:
     .row.align-items-center.mb-5
-      .col-lg-8.order-2.order-lg-1
+      .col-lg-8.order-2.order-lg-1(data-aos="fade-right")
         .row
           .col-12
             .px-4.py-3.bg-c8
@@ -55,7 +55,7 @@
                   p.mb-0 #[b ¿Cómo trabaja?]
                     br
                     | Trabaja mediante una librería de JS. Una librería es una colección de procesos almacenados en objetos o módulos, es decir, códigos que aceleran el flujo de trabajo, pues consiste en reciclar algo que alguien ya ha creado antes.
-      .col-lg-4.mb-4.mb-lg-0.order-1.order-lg-2
+      .col-lg-4.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema3/img1.png', style='width: 370px', alt='').m-auto
     .row.mb-4.pt-4(data-aos="fade-down")
@@ -68,14 +68,14 @@
             .col
               h3.text-white ¿Qué es React JS?
     .row.mb-5
-      .col-auto.d-none.d-md-block
+      .col-auto.d-none.d-md-block(data-aos="fade-right")
         figure.mt-1
           img(src="@/assets/curso/tema3/img1.svg", style="width: 80px", alt="").m-auto  
-      .col
+      .col(data-aos="fade-left")
         p.mb-0 Es una biblioteca JavaScript de código abierto, desarrollada por la multinacional Facebook para crear interfaces de usuario. Es importante tener en cuenta que una biblioteca o librería es un conjunto de funcionalidades ya construidas y reutilizables siguiendo su sintaxis. Su principal objetivo, además de facilitar el desarrollo de aplicaciones de una sola página, es ser sencilla, declarativa y fácil de combinar.
     .row.justify-content-center.mb-5
       .col-lg-10
-        .p-4.bg-c6
+        .p-4.bg-c6(data-aos="fade-down")
           .row.align-items-center
             .col-md-auto.mb-4.mb-md-0
               figure
@@ -92,17 +92,17 @@
             .col
               h3.text-white ¿Qué es JSX?
     .row
-      .col-auto.d-none.d-md-block
+      .col-auto.d-none.d-md-block(data-aos="fade-right")
         figure.mt-1
           img(src="@/assets/curso/tema3/img1.svg", style="width: 80px", alt="").m-auto  
-      .col
+      .col(data-aos="fade-left")
         p.mb-0 Su nombre viene de la composición de JavaScript (JS) + XML = (JSX) y corresponde a la sintaxis propuesta en React JS para escribir elementos de interfaz web compuestos por JavaScript + HTML, donde el HTML sigue las normas de código bien formado XML.
     Separador
     #t_3_1
     .titulo-segundo.color-acento-contenido
       h2 3.1 Instalando React JS
-    p.mb-5 Las siguientes instrucciones presentan el proceso de instalación para sistemas operativos Linux versión Ubuntu 20.04.3 LTS y Windows. En ambos casos, primero se necesita instalar el servidor denominado Node y el manejador de paquetes npm.
-    .tarjeta.tarjeta--gris.mb-5
+    p.mb-5(data-aos="fade-right") Las siguientes instrucciones presentan el proceso de instalación para sistemas operativos Linux versión Ubuntu 20.04.3 LTS y Windows. En ambos casos, primero se necesita instalar el servidor denominado Node y el manejador de paquetes npm.
+    .tarjeta.tarjeta--gris.mb-5(data-aos="fade-left")
       .p-4.p-lg-5
         PasosB.color-primario
           .row.m-1(titulo="Paso")
@@ -162,7 +162,7 @@
               p.mb-5 Finalmente, compruebe la versión instalada (v14.18.1) ejecutando el siguiente comando: #[b node --version].
               figure
                 img(src='@/assets/curso/tema3/img11.png', style='width: 950px', alt='Terminal mostrando la instalación exitosa de Node.js en Ubuntu, incluyendo el tamaño del paquete y el espacio de disco usado.').m-auto
-    .row.bg-c26
+    .row.bg-c26(data-aos="fade-left")
       .col-12
         .px-5
           p.mb-5 A continuación siga los siguientes pasos de Instalación sobre sistema operativo #[b Windows].
@@ -198,18 +198,18 @@
           #t_3_2
           .titulo-segundo.color-acento-contenido
             h2 3.2 Crear un proyecto
-    p.mb-5 Una vez llevado a cabo el proceso de instalación del paso anterior de node y npm, se puede crear el proyecto React e ir ejecutando los siguientes comandos:
+    p.mb-5(data-aos="fade-right") Una vez llevado a cabo el proceso de instalación del paso anterior de node y npm, se puede crear el proyecto React e ir ejecutando los siguientes comandos:
     .row.justify-content-center.align-items-center.mb-5
-      .col-lg-7.order-2.order-lg-1
+      .col-lg-7.order-2.order-lg-1(data-aos="fade-right")
         .p-4.bg-c27
           p.mb-0 #[b a)npx create-react-app my-app]
           p.mb-0 #[b b)cd my-app]
           p.mb-0 #[b c)npm start]
-      .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2
+      .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema3/img17.png', style='width: 330px', alt='').m-auto
-    p.mb-5 Iniciar la creación del proyecto, a través de la siguiente secuencia:
-    .tarjeta.tarjeta--gris
+    p.mb-5(data-aos="fade-right") Iniciar la creación del proyecto, a través de la siguiente secuencia:
+    .tarjeta.tarjeta--gris(data-aos="fade-up")
       .p-4.p-lg-5
         PasosB.color-primario
           .row.m-1(titulo="Paso")
@@ -253,21 +253,21 @@
     .titulo-segundo.color-acento-contenido
       h2 3.3 Propiedades y estados de los componentes
     .row.align-items-center.mb-5
-      .col-lg-9.order-2.order-lg-1
+      .col-lg-9.order-2.order-lg-1(data-aos="fade-right")
         P Un componente en React hace referencia a la posibilidad de definir de manera independiente una funcionalidad que puede ser reutilizable dentro del sistema. Esencialmente, estas funcionalidades se escriben como funciones JavaScript que reciben entradas denominadas propiedades y devuelven una forma de visualización.
         P.mb-0 Ejemplo de un componente denominado "Bienvenido" que recibe una propiedad y devuelve un párrafo de saludo.
-      .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2
+      .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema3/img24.png', style='width: 350px', alt='').m-auto
     .row.justify-content-center.mb-5
-      .col-md-auto
+      .col-md-auto(data-aos="fade-down")
         .titulo-sexto.color-acento-contenido.mb-4
           p.mb-0 #[b Figura 11]. Propiedades
         figure
           img(src="@/assets/curso/tema3/img25.png", style="width: 850px", alt="Captura de pantalla de Visual Studio Code mostrando un editor abierto con varios archivos de código JavaScript en la vista de Explorador.").m-auto
-    p.mb-5 Además, a un componente se le puede aplicar el concepto de estado en donde este, se define como la capacidad de especificar variables que pueden cambiar su valor en el tiempo, convirtiéndose en un comportamiento interno del componente, estos componentes se definen con el nombre de clase con la palabra reservada class.
+    p.mb-5(data-aos="fade-right") Además, a un componente se le puede aplicar el concepto de estado en donde este, se define como la capacidad de especificar variables que pueden cambiar su valor en el tiempo, convirtiéndose en un comportamiento interno del componente, estos componentes se definen con el nombre de clase con la palabra reservada class.
     .row.justify-content-center.mb-5
-      .col-lg-8
+      .col-lg-8(data-aos="fade-right")
         .row
           .col-12
             .px-4.py-3.bg-c20
@@ -300,9 +300,9 @@
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
               h3.text-white Eventos en React
-    p.mb-5 Los eventos en React se manejan semejante a los del DOM se le pasa una función al controlador del evento.
+    p.mb-5(data-aos="fade-right") Los eventos en React se manejan semejante a los del DOM se le pasa una función al controlador del evento.
     .row.justify-content-center.mb-5
-      .col-lg-8
+      .col-lg-8(data-aos="fade-left")
         .row
           .col-12
             .px-4.py-3.bg-c20
@@ -347,9 +347,9 @@
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
               h3.text-white Listas y Keys
-    p.mb-5 Las listas hacen referencia a un arreglo de datos, que puede ser un arreglo de objetos o de datos simples como caracteres, números, etc. Como toda lista en programación, React proporciona un método para extraer estos datos y mostrarlos en la página en la cual se está trabajando. A continuación, se presenta cómo se hace:
+    p.mb-5(data-aos="fade-right") Las listas hacen referencia a un arreglo de datos, que puede ser un arreglo de objetos o de datos simples como caracteres, números, etc. Como toda lista en programación, React proporciona un método para extraer estos datos y mostrarlos en la página en la cual se está trabajando. A continuación, se presenta cómo se hace:
     .row.justify-content-center.align-items-center.mb-5
-      .col-lg-4.mb-4.mb-lg-0
+      .col-lg-4.mb-4.mb-lg-0(data-aos="fade-right")
         .row
           .col-12.mb-4
             .p-4.bg-c28
@@ -357,7 +357,7 @@
           .col-12
             .p-4.bg-c28
               p.mb-0 Adicional al manejo de listas es muy importante tener en cuenta el identificador único de componentes para evitar errores en el DOM por lo tanto es necesario manejar el atributo key.
-      .col-lg-6
+      .col-lg-6(data-aos="fade-left")
         .row
           .col-12
             .px-4.py-3.bg-c20
@@ -391,9 +391,9 @@
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
               h3.text-white Formularios
-    p.mb-5 En React el envío de formularios se comporta como en HTML, solo que aquí, el ingreso y cambio de valores en las entradas se deben manejar con componentes controlados por medio de estados.
+    p.mb-5(data-aos="fade-right") En React el envío de formularios se comporta como en HTML, solo que aquí, el ingreso y cambio de valores en las entradas se deben manejar con componentes controlados por medio de estados.
     .row.justify-content-center.mb-5
-      .col-lg-8
+      .col-lg-8(data-aos="fade-left")
         .row
           .col-12
             .px-4.py-3.bg-c20
@@ -426,9 +426,9 @@
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
               h3.text-white Concepto de clases en React
-    p.mb-5 Las clases son otra forma de definir un componente en React. Se caracterizan por tener propiedades y, a diferencia de las funciones, pueden definir estados propios sin utilizar el concepto de Hook. Dentro de los componentes de clase, existe una función constructora que se utiliza para definir el estado inicial del componente. Es muy importante llamar a la función super() dentro del constructor para que los parámetros funcionen adecuadamente, como puede verse en la siguiente imagen:
+    p.mb-5(data-aos="fade-right") Las clases son otra forma de definir un componente en React. Se caracterizan por tener propiedades y, a diferencia de las funciones, pueden definir estados propios sin utilizar el concepto de Hook. Dentro de los componentes de clase, existe una función constructora que se utiliza para definir el estado inicial del componente. Es muy importante llamar a la función super() dentro del constructor para que los parámetros funcionen adecuadamente, como puede verse en la siguiente imagen:
     .row.justify-content-center
-      .col-lg-8
+      .col-lg-8(data-aos="fade-right")
         .row
           .col-12
             .px-4.py-3.bg-c20
@@ -452,8 +452,8 @@
     .row.bg-c29
       .col-12
         .p-5
-          p.mb-5 Explorar el siguiente recurso y conocer los aspectos más relevantes relacionados con el concepto de clases en React:
-          .row.justify-content-center.mb-5
+          p.mb-5(data-aos="fade-right") Explorar el siguiente recurso y conocer los aspectos más relevantes relacionados con el concepto de clases en React:
+          .row.justify-content-center.mb-5(data-aos="fade-left")
             .col-md-10.col-lg-4.m-2
               .p-5.bg-c39
                 p.mb-0 Los componentes permiten separar la interfaz de usuario en piezas independientes, reutilizables y pensar en cada pieza de forma aislada.
@@ -475,12 +475,12 @@
                       img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
                   .col
                     h3.text-white Funciones Hooks
-          p.mb-5 Las funciones Hooks permiten a los componentes definidos por medio de funciones manejar variables de estado locales, similar a cómo lo hacen las clases. Los Hooks son funciones JavaScript y están sujetas a dos reglas:
+          p.mb-5(data-aos="fade-right") Las funciones Hooks permiten a los componentes definidos por medio de funciones manejar variables de estado locales, similar a cómo lo hacen las clases. Los Hooks son funciones JavaScript y están sujetas a dos reglas:
           .row.justify-content-center
-            .col-lg-3.mb-4.mb-lg-0
+            .col-lg-3.mb-4.mb-lg-0(data-aos="fade-right")
               figure
                 img(src='@/assets/curso/tema3/img27.png', style="width: 200px", alt='').m-auto
-            .col-lg-7
+            .col-lg-7(data-aos="fade-left")
               .row
                 .col-12.bg-c43
                   .p-1
@@ -499,9 +499,9 @@
                           img(src='@/assets/curso/tema3/img10.svg', style="width: 100px", alt='')
                       .col
                         p.mb-0 Solo llamar Hooks desde componentes de función de React. No se deben llamar Hooks desde las funciones regulares de JavaScript.
-    p.mb-5 Ejemplo de una función que utiliza el Hook useState:
+    p.mb-5(data-aos="fade-right") Ejemplo de una función que utiliza el Hook useState:
     .row.justify-content-center.mb-5
-      .col-lg-8
+      .col-lg-8(data-aos="fade-left")
         .row
           .col-12
             .px-4.py-3.bg-c20
@@ -532,9 +532,9 @@
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
               h3.text-white Ciclos de vida de los componentes de React
-    p.mb-5 Hace referencia a los métodos que se pueden utilizar por defecto (es decir, que forman parte de la librería de React). Cuando se ejecuta o se renderiza un componente en la línea de tiempo de ejecución del programa, estos métodos son:
+    p.mb-5(data-aos="fade-right") Hace referencia a los métodos que se pueden utilizar por defecto (es decir, que forman parte de la librería de React). Cuando se ejecuta o se renderiza un componente en la línea de tiempo de ejecución del programa, estos métodos son:
     .row.justify-content-center.mb-5
-      .col-lg-10
+      .col-lg-10(data-aos="fade-down")
         .p-4.p-lg-5.bg-c4
           .titulo-sexto.color-acento-contenido.mb-4
             p.mb-0 #[b Tabla 2.] Métodos de ciclo de vida de React
@@ -566,9 +566,9 @@
                 tr
                   td #[b componentWillUnmount()]
                   td Se ejecuta en el momento que el componente se va a retirar del DOM.
-    p.mb-5 Se puede revisar en el siguiente código cómo quedará el archivo:
+    p.mb-5(data-aos="fade-right") Se puede revisar en el siguiente código cómo quedará el archivo:
     .row.justify-content-center.mb-5
-      .col-lg-9
+      .col-lg-9(data-aos="fade-right")
         .row
           .col-12
             .px-4.py-3.bg-c20
@@ -630,7 +630,7 @@
                 p.mb-0  }
     .row.justify-content-center.mb-5
       .col-lg-10
-        .p-4.bg-c6
+        .p-4.bg-c6(data-aos="fade-down")
           .row.align-items-center
             .col-md-auto.mb-4.mb-md-0
               figure
@@ -646,9 +646,9 @@
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
               h3.text-white Ejecutar la aplicación
-    p.mb-5 Para ejecutar una aplicación React JS, se utiliza el comando #[b npm start]. Para generar la versión de producción, se debe ejecutar el siguiente comando: #[b npm run build].
+    p.mb-5(data-aos="fade-right") Para ejecutar una aplicación React JS, se utiliza el comando #[b npm start]. Para generar la versión de producción, se debe ejecutar el siguiente comando: #[b npm run build].
     .row.justify-content-center.mb-5
-      .col-lg-9
+      .col-lg-9(data-aos="fade-right")
         .row
           .col-12
             .px-4.py-3.bg-c20
@@ -683,9 +683,9 @@
                 p.mb-0  Find out more about deployment here:
                 p.mb-0  
                 p.mb-0    https://cra.link/deployment
-    p.mb-5 Este comando genera la carpeta build con la versión compilada y minificada del proyecto React SPA (Single Page Application). A continuación, se describirá cómo debe quedar la organización y el registro de este proceso.
+    p.mb-5(data-aos="fade-right") Este comando genera la carpeta build con la versión compilada y minificada del proyecto React SPA (Single Page Application). A continuación, se describirá cómo debe quedar la organización y el registro de este proceso.
     .row.justify-content-center.mb-5
-      .col-lg-9
+      .col-lg-9(data-aos="fade-left")
         .row
           .col-12
             .px-4.py-3.bg-c20
@@ -718,7 +718,6 @@
                 p.mb-0      │   └── runtime-main.1c420381.js.map
                 p.mb-0      └── media
                 p.mb-0          └── logo.6ce24c58.svg
-
 
 </template>
 

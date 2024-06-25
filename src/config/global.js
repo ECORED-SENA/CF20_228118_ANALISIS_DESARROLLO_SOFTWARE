@@ -201,32 +201,188 @@ export default {
   },
   complementario: [
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      link: 'https://www.google.com/',
+      tema: 'Instalando React',
+      referencia:
+        'Editor HTML gratuito en línea limpiador y convertidor. (2021, 27 de octubre). <i>Editor HTML gratuito en línea limpiador y convertidor</i>.',
+      tipo: 'Página web',
+      link: 'htmled.it/or',
     },
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      descarga: '/downloads/prueba.pdf',
+      tema: 'Instalando React',
+      referencia: 'Cubic Factory. (2021, 27 de octubre). <i>Cubic Factory</i>.',
+      tipo: 'Página web',
+      link: 'cubicfactory.com/jseditor',
+    },
+    {
+      tema: 'Propiedades y estados de los componentes',
+      referencia:
+        'CodeSandbox. (2021, 27 de octubre). <i>CodeSandbox: Online Code Editor and IDE for Rapid Web Development</i>.',
+      tipo: 'Página web',
+      link: 'https://codesandbox.io/',
+    },
+    {
+      tema: 'Crear un proyecto',
+      referencia:
+        'React Playground. (2021, 27 de octubre). <i>React Playground</i>. ',
+      tipo: 'Página web',
+      link: 'https://playcode.io/react',
+    },
+    {
+      tema: 'Hibernate',
+      referencia:
+        'Hibernate Community Documentation. (s. f.). <i>Capítulo 15. HQL: El lenguaje de consulta de Hibernate</i>.',
+      tipo: 'Página web',
+      link:
+        'https://docs.jboss.org/hibernate/orm/3.5/reference/es-ES/html/queryhql.html',
     },
   ],
   glosario: [
     {
-      termino: 'Término',
-      significado: 'Texto de la definición',
+      termino: 'API',
+      significado:
+        'conjunto de métodos ofrecidos por una librería que puede ser utilizado por otro <i>software</i> por medio de un conjunto de reglas establecidas.',
     },
     {
-      termino: '<em>Término con extranjerismo</em>',
-      significado: 'Definición',
+      termino: 'CGI',
+      significado:
+        'interfaz de entrada común se refiere a un sistema de comunicación que le indica al servidor web cómo enviar y recibir datos de una aplicación de servidor a un cliente.',
+    },
+    {
+      termino: 'CSS3',
+      significado: 'hojas de estilo en cascada versión 3.',
+    },
+    {
+      termino: 'DOM',
+      significado: 'modelo de objetos de un documento HTML.',
+    },
+    {
+      termino: 'ES6',
+      significado: 'abreviación del estándar ECMA SCRIPT. Versión 6.',
+    },
+    {
+      termino: '<i>Framework</i>',
+      significado:
+        'es un marco o esquema de trabajo que define un conjunto de utilidades implementadas para un contexto particular para ser reutilizadas por los desarrolladores y así facilitar y acelerar el desarrollo de ciertas actividades propias de la construcción de <i>software</i>.',
+    },
+    {
+      termino: '<i>Groovy</i>',
+      significado:
+        'lenguaje de programación efectuado sobre la plataforma JAVA el cual permite realizar APIs de JAVA.',
+    },
+    {
+      termino: 'HQL',
+      significado:
+        'lenguaje de consulta parecido al SQL implementado por el <i>framework Hibernate</i>.',
+    },
+    {
+      termino: 'HTML',
+      significado: 'lenguaje de marcado hipertexto.',
+    },
+    {
+      termino: 'HTML',
+      significado:
+        'HyperText Markup Language, lenguaje de Marcas de Hipertexto.',
+    },
+    {
+      termino: 'JAVASCRIPT',
+      significado: 'lenguaje de programación.',
+    },
+    {
+      termino: 'JDBC',
+      significado:
+        ' API para JAVA que permite el acceso y manipulación de bases de datos relacionales.',
+    },
+    {
+      termino: 'JDK',
+      significado: 'kit de Desarrollo de Java.',
+    },
+    {
+      termino: 'JPA',
+      significado: ' API de persistencia de JAVA.',
+    },
+    {
+      termino: 'JSX',
+      significado:
+        'sintaxis propuesta en React JS para escribir elementos de interfaz web.',
+    },
+    {
+      termino: 'Kotlin',
+      significado:
+        'lenguaje de programación de tipado estático, sencillo y fácil de entender y aprender.',
+    },
+    {
+      termino: 'NODE.js',
+      significado: 'es un servidor de aplicaciones.',
+    },
+    {
+      termino: 'NPM',
+      significado: 'es un manejador de paquetes de sistema operativo.',
+    },
+    {
+      termino: '<i>Plugin</i>',
+      significado:
+        'programas pequeños que se anexan a otros para ofrecer alguna funcionalidad nueva.',
+    },
+    {
+      termino: 'SPA',
+      significado: 'tipo de aplicación Web.',
+    },
+    {
+      termino: 'URL',
+      significado:
+        'localizador uniforme de recursos, facilita la recuperación de información determinada en internet, se escribe en el navegador para ingresar a una página determinada.',
     },
   ],
   referencias: [
     {
-      referencia: '',
+      referencia:
+        'Berzal, F., Cubero, J., & Cortijo, F. (2007). Desarrollo profesional de aplicaciones web con Asp. net. ',
+      link:
+        'https://books.google.es/books?hl=es&lr=&id=J1d_9l6zlAIC&oi=fnd&pg=PA3&dq=servlests+y+jsp+fernando+berzal&ots=GsR9oMYn8M&sig=YaCnuz6ed8E_kEo_G1CPHH-KjjU',
+    },
+    {
+      referencia:
+        'Gallagher, J. (2021, 4 de mayo). Los lenguajes de programación más populares. Career Karma. ',
+      link: 'https://careerkarma.com/blog/top-programming-languages-2021/',
+    },
+    {
+      referencia:
+        'Gómez, M., & Cervantes, J. (2017). Introducción a la Programación Web con Java: JSP y Servlets JavaServer Faces. ',
       link: '',
+    },
+    {
+      referencia:
+        'Johnson, R. (2004). Expert one-on-one J2EE design and development. John Wiley & Sons. ',
+      link: '',
+    },
+    {
+      referencia:
+        'Martínez, P. E. (2015). Hibernate. Persistencia de objetos en JEE (1ª ed.). Ra-Ma. ',
+      link: '',
+    },
+    {
+      referencia: 'Node. (2021). Node JS Server. ',
+      link: 'https://nodejs.org/en/',
+    },
+    {
+      referencia:
+        'React JS. (2021). React - A JavaScript library for building user interfaces. ',
+      link: 'https://reactjs.org/',
+    },
+    {
+      referencia: 'Spring. (2021). Spring makes Java simple. ',
+      link: 'https://spring.io',
+    },
+    {
+      referencia:
+        'Statistics Times. (2021). Principales idiomas informáticos. STATISTICSTIMES. ',
+      link: 'https://statisticstimes.com/tech/top-computer-languages.php',
+    },
+    {
+      referencia:
+        'Capítulo 15. HQL: El lenguaje de consulta de Hibernate. (s. f.). Hibernate Community Documentation. ',
+      link:
+        'https://docs.jboss.org/hibernate/orm/3.5/reference/es-ES/html/queryhql.html',
     },
   ],
   creditos: [
@@ -249,8 +405,20 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Nombre del rol',
+          nombre: 'Carlos Hernán Muñoz Carvajal',
+          cargo: 'Experto Temático',
+          centro:
+            'Centro de Teleinformática y Producción Industrial - Regional Cauca',
+        },
+        {
+          nombre: 'Zulema Yidney León Escobar',
+          cargo: 'Experta Temática',
+          centro:
+            'Centro de Teleinformática y Producción Industrial - Regional Cauca',
+        },
+        {
+          nombre: 'Paola Alexandra Moya Peralta',
+          cargo: 'Evaluadora Instruccional',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
@@ -259,22 +427,22 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Nombre responsable',
+          nombre: 'Juan Daniel Polanco Muñoz',
           cargo: 'Diseñador de Contenidos Digitales',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Nombre responsable',
+          nombre: 'Jhon Jairo Urueta Álvarez',
           cargo: 'Desarrollador Fullstack',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Nombre',
+          nombre: 'Daniela Muñoz Bedoya',
           cargo: 'Animador y Producción audiovisual',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Nombre',
+          nombre: 'Edgar Mauricio Cortés García',
           cargo: 'Actividad Didáctica',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
@@ -283,16 +451,16 @@ export default {
     {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
-        {
-          nombre: 'Luis Gabriel Urueta Alvarez',
-          cargo: 'Validador de Recursos Educativos Digitales',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
-        },
-        {
-          nombre: 'Jaime Hernán Tejada Llano',
-          cargo: 'Validador de Recursos Educativos Digitales',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
-        },
+        //{
+        //  nombre: 'Luis Gabriel Urueta Alvarez',
+        //  cargo: 'Validador de Recursos Educativos Digitales',
+        //  centro: 'Centro de Servicios de Salud - Regional Antioquia',
+        //},
+        //{
+        //  nombre: 'Jaime Hernán Tejada Llano',
+        //  cargo: 'Validador de Recursos Educativos Digitales',
+        //  centro: 'Centro de Servicios de Salud - Regional Antioquia',
+        //},
         {
           nombre: 'Daniel Ricardo Mutis Gómez',
           cargo: 'Evaluador para contenidos inclusivos y accesibles',

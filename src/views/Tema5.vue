@@ -252,19 +252,24 @@
               tbody
                 tr
                   td #[b IntelliJ IDEA]
-                  td https://www.jetbrains.com/idea/
+                  td 
+                    a(href="https://www.jetbrains.com/idea/" target="_blank") https://www.jetbrains.com/idea/
                 tr
                   td #[b Spring Tools]
-                  td https://spring.io/tools
+                  td 
+                    a(href="https://spring.io/tools" target="_blank") https://spring.io/tools
                 tr
                   td #[b Visual Studio Code]
-                  td https://code.visualstudio.com/docs/languages/java
+                  td 
+                    a(href="https://code.visualstudio.com/docs/languages/java" target="_blank") https://code.visualstudio.com/docs/languages/java
                 tr
                   td #[b Eclipse]
-                  td https://www.eclipse.org/downloads/packages/
+                  td 
+                    a(href="https://www.eclipse.org/downloads/packages/" target="_blank") https://www.eclipse.org/downloads/packages/
                 tr
                   td #[b NetBeans]
-                  td https://netbeans.apache.org/
+                  td 
+                    a(href="https://netbeans.apache.org/" target="_blank") https://netbeans.apache.org/
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="fade-left")
         .p-4.p-lg-5.bg-c4
@@ -279,10 +284,12 @@
               tbody
                 tr
                   td #[b JDK Oracle]
-                  td https://www.oracle.com/java/technologies/downloads/
+                  td 
+                    a(href="https://www.oracle.com/java/technologies/downloads/" target="_blank") https://www.oracle.com/java/technologies/downloads/
                 tr
                   td #[b AdoptOpenJDK]
-                  td https://adoptopenjdk.net/
+                  td 
+                    a(href="https://adoptopenjdk.net/" target="_blank") https://adoptopenjdk.net/
     p.mb-5(data-aos="fade-right") Para construir aplicaciones en Spring Framework necesitamos:
     .tarjeta.tarjeta--gris.mb-5(data-aos="fade-left")
       .p-4.p-lg-5

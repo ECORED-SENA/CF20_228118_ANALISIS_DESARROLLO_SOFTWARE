@@ -113,7 +113,10 @@
                 img(src='@/assets/curso/tema3/img2.png', style='width: 650px', alt='Página principal del sitio web de Node.js, destacando las últimas versiones de seguridad disponibles y opciones de descarga para Linux.').m-auto
           .row.m-1(titulo="Paso")
             .col-12
-              p.mb-5 Ingrese a la página oficial de Node.js: https://nodejs.org/en/.
+              p.mb-5 Ingrese a la página oficial de Node.js: 
+                |
+                a(href="https://nodejs.org/en/" target="_blank") https://nodejs.org/en/
+                | .
               figure
                 img(src='@/assets/curso/tema3/img3.png', style='width: 750px', alt='Sección de descargas en el sitio web de Node.js, mostrando diferentes versiones para Windows, macOS y código fuente, incluyendo detalles sobre las arquitecturas soportadas como x64 y ARM.').m-auto
           .row.m-1(titulo="Paso")

@@ -464,8 +464,8 @@
                   td ORDER BY Cat.#[span.txt-c4 name] ASC
                 tr
                   td
-                    p from #[span.txt-c3 Cat] as cat
-                    p inner join Cat.#[span.txt-c3 mate] as mate
+                    p #[b from #[span.txt-c3 Cat] as cat]
+                    p #[b inner join Cat.#[span.txt-c3 mate] as mate]
                   td
                     p SELECT * FROM #[span.txt-c4 cat] cat
                     p INNER JOIN #[span.txt-c4 cat_mate] mate ON Cat.#[span.txt-c4 id] = mate.#[span.txt-c4 id]

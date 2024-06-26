@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1328" height="1010" viewBox="0 0 1328 1010">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_403719" data-name="Rectángulo 403719" width="157.284" height="234.994" transform="translate(0 0)" fill="#12263f"/>
+    </clipPath>
+    <filter id="Elipse_11725" x="-174.203" y="767.101" width="397.402" height="396.419" filterUnits="userSpaceOnUse">
+      <feOffset dx="9.39" dy="9.39" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25.04" result="blur"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path-2">
+      <rect id="Rectángulo_404121" data-name="Rectángulo 404121" width="157.284" height="310.994" transform="translate(0 0)" fill="#12263f"/>
+    </clipPath>
+    <filter id="Elipse_11757" x="1123.581" y="209.095" width="397.402" height="396.419" filterUnits="userSpaceOnUse">
+      <feOffset dx="9.39" dy="9.39" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="25.04" result="blur-2"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_1104216" data-name="Grupo 1104216" transform="translate(-136 -12215)">
+    <rect id="Rectángulo_404117" data-name="Rectángulo 404117" width="1328" height="1010" transform="translate(136 12215)" fill="#d6e1fd"/>
+    <g id="Enmascarar_grupo_1098827" data-name="Enmascarar grupo 1098827" transform="translate(136 12990.006)" clip-path="url(#clip-path)">
+      <g transform="matrix(1, 0, 0, 1, 0, -775.01)" filter="url(#Elipse_11725)">
+        <ellipse id="Elipse_11725-2" data-name="Elipse 11725" cx="123.581" cy="123.089" rx="123.581" ry="123.089" transform="translate(-108.47 832.83)" fill="#fff" opacity="0.3"/>
+      </g>
+      <ellipse id="Elipse_11726" data-name="Elipse 11726" cx="43.76" cy="43.76" rx="43.76" ry="43.76" transform="translate(-29.173 25.195)" fill="none" stroke="#fff" stroke-width="10" opacity="0.4"/>
+      <path id="Trazado_879449" data-name="Trazado 879449" d="M194.778,439.278l-1.757-2.247,6.839-5.386-6.839-5.387,1.757-2.247,9.693,7.633Zm-19.806-2.247,6.839-5.386-6.839-5.387,1.757-2.247,9.693,7.633-9.693,7.633Zm-18.969,0,1.76-1.386,5.079-4L156,426.258l1.757-2.247,9.693,7.633-9.693,7.633Z" transform="translate(-51.245 -218.113)" fill="#3a1d71" fill-rule="evenodd"/>
+    </g>
+    <g id="Enmascarar_grupo_1098899" data-name="Enmascarar grupo 1098899" transform="translate(1306.716 12432)" clip-path="url(#clip-path-2)">
+      <g transform="matrix(1, 0, 0, 1, -1170.72, -217)" filter="url(#Elipse_11757)">
+        <ellipse id="Elipse_11757-2" data-name="Elipse 11757" cx="123.581" cy="123.089" rx="123.581" ry="123.089" transform="translate(1189.31 274.83)" fill="#fff" opacity="0.3"/>
+      </g>
+      <ellipse id="Elipse_11758" data-name="Elipse 11758" cx="43.76" cy="43.76" rx="43.76" ry="43.76" transform="translate(98.937 25.195)" fill="none" stroke="#fff" stroke-width="10" opacity="0.4"/>
+      <path id="Trazado_880040" data-name="Trazado 880040" d="M165.7,439.278l1.757-2.247-6.839-5.386,6.839-5.387-1.757-2.247L156,431.644ZM185.5,437.03l-6.839-5.386,6.839-5.387-1.757-2.247-9.693,7.633,9.693,7.633Zm18.969,0-1.76-1.386-5.079-4,6.839-5.387-1.757-2.247-9.693,7.633,9.693,7.633Z" transform="translate(-151.945 -236.113)" fill="#3a1d71" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

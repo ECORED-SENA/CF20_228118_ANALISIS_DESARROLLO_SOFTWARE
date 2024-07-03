@@ -6,7 +6,7 @@
       .titulo-principal__numero
         span 3
       h1 Fundamentos de React JS
-    p.mb-5(data-aos="fade-right") React JS es una nueva tecnología importante para la construcción de software en su componente Front-end, que requiere tener en cuenta algunas consideraciones, como se pueden conocer a continuación:
+    p.mb-5(data-aos="fade-right") React JS es una nueva tecnología importante para la construcción de #[i software] en su componente #[i Front-end], que requiere tener en cuenta algunas consideraciones, como se pueden conocer a continuación:
     .row.align-items-center.mb-5
       .col-lg-8.order-2.order-lg-1(data-aos="fade-right")
         .row
@@ -45,7 +45,7 @@
                   |
                   p.mb-0 #[b ¿Quién la creó?]
                     br
-                    | Fue creada originalmente por Facebook, y hoy en día es una de las librerías más populares que existen para páginas web y front-end.
+                    | Fue creada originalmente por Facebook, y hoy en día es una de las librerías más populares que existen para páginas web y #[i front-end].
           .col-12
             .px-4.py-3.bg-c11
               ul.lista-ul.mb-0
@@ -106,12 +106,6 @@
       .p-4.p-lg-5
         PasosB.color-primario
           .row.m-1(titulo="Paso")
-            .col-lg-4.mb-4.mb-lg-0
-              p.mb-0 Ingrese a la pestaña #[b #[i DOWNLOADS]].
-            .col-lg-8
-              figure
-                img(src='@/assets/curso/tema3/img2.png', style='width: 650px', alt='Página principal del sitio web de Node.js, destacando las últimas versiones de seguridad disponibles y opciones de descarga para Linux.').m-auto
-          .row.m-1(titulo="Paso")
             .col-12
               p.mb-5 Ingrese a la página oficial de Node.js: 
                 |
@@ -121,7 +115,13 @@
                 img(src='@/assets/curso/tema3/img3.png', style='width: 750px', alt='Sección de descargas en el sitio web de Node.js, mostrando diferentes versiones para Windows, macOS y código fuente, incluyendo detalles sobre las arquitecturas soportadas como x64 y ARM.').m-auto
           .row.m-1(titulo="Paso")
             .col-lg-4.mb-4.mb-lg-0
-              p.mb-0 Ingrese a la opción #[b #[i Installing Node.js via package manager]].
+              p.mb-0 Ingrese a la pestaña #[b #[i DOWNLOADS]].
+            .col-lg-8
+              figure
+                img(src='@/assets/curso/tema3/img2.png', style='width: 650px', alt='Página principal del sitio web de Node.js, destacando las últimas versiones de seguridad disponibles y opciones de descarga para Linux.').m-auto
+          .row.m-1(titulo="Paso")
+            .col-lg-4.mb-4.mb-lg-0
+              p.mb-0 Ingrese a la opción #[b #[i Installing Node.js]] via #[b #[i package manager]].
             .col-lg-8
               figure
                 img(src='@/assets/curso/tema3/img4.png', style='width: 650px', alt='Información sobre la instalación de Node.js a través de gestores de paquetes, mencionando que los paquetes son mantenidos por sus respectivos empaquetadores.').m-auto
@@ -169,7 +169,10 @@
       .col-12
         .px-5
           p.mb-5 A continuación siga los siguientes pasos de Instalación sobre sistema operativo #[b Windows].
-          p.mb-5 #[b.txt-c2 Paso 1.] Ingrese a Node >= 14.0.0 and npm >= 5.6 que corresponde a la página oficial de nodejs https://nodejs.org/en/ y descargue la versión para windows de 64 bits.
+          p.mb-5 #[b.txt-c2 Paso 1.] Ingrese a Node >= 14.0.0 and npm >= 5.6 que corresponde a la página oficial de nodejs 
+            |
+            a(href="https://nodejs.org/en/" target="_blank") https://nodejs.org/en/ 
+            | y descargue la versión para windows de 64 bits.
           .row.justify-content-center.mb-5
             .col-lg-8
               .titulo-sexto.color-acento-contenido.mb-4
@@ -183,7 +186,7 @@
                 p.mb-0 #[b Figura 8]. Paso 2
               figure
                 img(src="@/assets/curso/tema3/img14.png", style="width: 800px", alt="Vista del explorador de archivos en un sistema operativo, con una estructura de carpetas y archivos relacionados con descargas y documentos.").m-auto
-          p.mb-5 #[b.txt-c2 Paso 3.] Ejecute el archivo descargado como administrador de Windows y continúe el wizard haciendo clic en next en cada pantalla.
+          p.mb-5 #[b.txt-c2 Paso 3.] Ejecute el archivo descargado como administrador de Windows y continúe el #[i wizard] haciendo clic en #[i next] en cada pantalla.
           .row.justify-content-center.mb-5
             .col-md-auto
               .titulo-sexto.color-acento-contenido.mb-4
@@ -205,9 +208,19 @@
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-7.order-2.order-lg-1(data-aos="fade-right")
         .p-4.bg-c27
-          p.mb-0 #[b a)npx create-react-app my-app]
-          p.mb-0 #[b b)cd my-app]
-          p.mb-0 #[b c)npm start]
+          ul.lista-ul.mb-0
+            li.d-flex
+              i.lista-ul__vineta
+              |
+              p.mb-0 #[b npx create-react-app my-app]
+            li.d-flex
+              i.lista-ul__vineta
+              |
+              p.mb-0 #[b cd my-app]
+            li.d-flex.mb-0
+              i.lista-ul__vineta
+              |
+              p.mb-0 #[b npm start]
       .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema3/img17.png', style='width: 330px', alt='').m-auto
@@ -217,16 +230,16 @@
         PasosB.color-primario
           .row.m-1(titulo="Paso")
             .col-lg-4.mb-4.mb-lg-0
-              p.mb-0 Ejecución de npx create-react-app my-app: Una vez el sistema termine la ejecución del paso anterior, ejecute: cd my-app.
-            .col-lg-8
-              figure
-                img(src='@/assets/curso/tema3/img18.png', style='width: 650px', alt='Pantalla de terminal mostrando la creación exitosa de una nueva aplicación React llamada my-app con la herramienta create-react-app, incluyendo instrucciones para comenzar a usar la aplicación.').m-auto
-          .row.m-1(titulo="Paso")
-            .col-lg-4.mb-4.mb-lg-0
               p.mb-0 Crear un comando Ubuntu: Desde la línea de comandos en Ubuntu, ejecute: npx create-react-app my-app.
             .col-lg-8
               figure
                 img(src='@/assets/curso/tema3/img19.png', style='width: 650px', alt='Pantalla de terminal después de navegar al directorio de la nueva aplicación React my-app.').m-auto
+          .row.m-1(titulo="Paso")
+            .col-lg-4.mb-4.mb-lg-0
+              p.mb-0 Ejecución de npx create-react-app my-app: Una vez el sistema termine la ejecución del paso anterior, ejecute: cd my-app.
+            .col-lg-8
+              figure
+                img(src='@/assets/curso/tema3/img18.png', style='width: 650px', alt='Pantalla de terminal mostrando la creación exitosa de una nueva aplicación React llamada my-app con la herramienta create-react-app, incluyendo instrucciones para comenzar a usar la aplicación.').m-auto
           .row.m-1(titulo="Paso")
             .col-lg-4.mb-4.mb-lg-0
               p.mb-0 Ejecute npm start para lanzar el proyecto: Dentro de la carpeta, ejecute: npm start para lanzar el proyecto.
@@ -268,7 +281,7 @@
           p.mb-0 #[b Figura 11]. Propiedades
         figure
           img(src="@/assets/curso/tema3/img25.png", style="width: 850px", alt="Captura de pantalla de Visual Studio Code mostrando un editor abierto con varios archivos de código JavaScript en la vista de Explorador.").m-auto
-    p.mb-5(data-aos="fade-right") Además, a un componente se le puede aplicar el concepto de estado en donde este, se define como la capacidad de especificar variables que pueden cambiar su valor en el tiempo, convirtiéndose en un comportamiento interno del componente, estos componentes se definen con el nombre de clase con la palabra reservada class.
+    p.mb-5(data-aos="fade-right") Además, a un componente se le puede aplicar el concepto de estado en donde este, se define como la capacidad de especificar variables que pueden cambiar su valor en el tiempo, convirtiéndose en un comportamiento interno del componente, estos componentes se definen con el nombre de clase con la palabra reservada #[i class].
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="fade-right")
         .row
@@ -349,17 +362,17 @@
               figure.fig-p1
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
-              h3.text-white Listas y Keys
+              h3.text-white Listas y #[i Keys]
     p.mb-5(data-aos="fade-right") Las listas hacen referencia a un arreglo de datos, que puede ser un arreglo de objetos o de datos simples como caracteres, números, etc. Como toda lista en programación, React proporciona un método para extraer estos datos y mostrarlos en la página en la cual se está trabajando. A continuación, se presenta cómo se hace:
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-4.mb-4.mb-lg-0(data-aos="fade-right")
         .row
           .col-12.mb-4
             .p-4.bg-c28
-              p.mb-0 En React es necesario pasar arreglos de datos a listas para el manejo de algunos componentes lo cual se trabaja con la función map de la siguiente manera en donde se devuelve un elemento &lt;li> por cada número.
+              p.mb-0 En React es necesario pasar arreglos de datos a listas para el manejo de algunos componentes lo cual se trabaja con la función #[b map] de la siguiente manera en donde se devuelve un elemento #[b &lt;li>] por cada número.
           .col-12
             .p-4.bg-c28
-              p.mb-0 Adicional al manejo de listas es muy importante tener en cuenta el identificador único de componentes para evitar errores en el DOM por lo tanto es necesario manejar el atributo key.
+              p.mb-0 Adicional al manejo de listas es muy importante tener en cuenta el identificador único de componentes para evitar errores en el DOM por lo tanto es necesario manejar el atributo #[b key].
       .col-lg-6(data-aos="fade-left")
         .row
           .col-12
@@ -429,7 +442,7 @@
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
               h3.text-white Concepto de clases en React
-    p.mb-5(data-aos="fade-right") Las clases son otra forma de definir un componente en React. Se caracterizan por tener propiedades y, a diferencia de las funciones, pueden definir estados propios sin utilizar el concepto de Hook. Dentro de los componentes de clase, existe una función constructora que se utiliza para definir el estado inicial del componente. Es muy importante llamar a la función super() dentro del constructor para que los parámetros funcionen adecuadamente, como puede verse en la siguiente imagen:
+    p.mb-5(data-aos="fade-right") Las clases son otra forma de definir un componente en React. Se caracterizan por tener propiedades y, a diferencia de las funciones, pueden definir estados propios sin utilizar el concepto de Hook. Dentro de los componentes de clase, existe una función constructora que se utiliza para definir el estado inicial del componente. Es muy importante llamar a la función #[b super()] dentro del constructor para que los parámetros funcionen adecuadamente, como puede verse en la siguiente imagen:
     .row.justify-content-center
       .col-lg-8(data-aos="fade-right")
         .row
@@ -465,10 +478,10 @@
                 p.mb-0 React permite definir componentes como clases o funciones. Los componentes definidos como clases actualmente proporcionan una serie de características extra.
             .col-md-10.col-lg-4.m-2
               .p-5.bg-c41
-                p.mb-0 La función super() dentro del constructor es un componente de React válido porque acepta un solo argumento de objeto "props" con datos y devuelve un elemento de React. Llamamos a dichos componentes “funcionales” porque literalmente son funciones JavaScript.
+                p.mb-0 La función #[b super()] dentro del constructor es un componente de React válido porque acepta un solo argumento de objeto "props" con datos y devuelve un elemento de React. Llamamos a dichos componentes “funcionales” porque literalmente son funciones JavaScript.
             .col-md-10.col-lg-4.m-2
               .p-5.bg-c42
-                p.mb-0 Nombres de componentes: Comience siempre los nombres de componentes con una letra mayúscula. React trata los componentes que empiezan con letras minúsculas como etiquetas del DOM. Por ejemplo, &lt;div/> representa una etiqueta div HTML pero &lt;Welcome/> representa un componente y requiere que Welcome esté definido.
+                p.mb-0 Nombres de componentes: Comience siempre los nombres de componentes con una letra mayúscula. React trata los componentes que empiezan con letras minúsculas como etiquetas del DOM. Por ejemplo, #[b &lt;div/>] representa una etiqueta #[b div] HTML pero #[b &lt;Welcome/>] representa un componente y requiere que #[b Welcome] esté definido.
           .row.mb-4.pt-4(data-aos="fade-down")
             .col-auto.bg-c17
               .px-3.pb-0
@@ -502,7 +515,7 @@
                           img(src='@/assets/curso/tema3/img10.svg', style="width: 100px", alt='')
                       .col
                         p.mb-0 Solo llamar Hooks desde componentes de función de React. No se deben llamar Hooks desde las funciones regulares de JavaScript.
-    p.mb-5(data-aos="fade-right") Ejemplo de una función que utiliza el Hook useState:
+    p.mb-5(data-aos="fade-right") Ejemplo de una función que utiliza el Hook #[b useState]:
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="fade-left")
         .row
@@ -686,7 +699,7 @@
                 p.mb-0  Find out more about deployment here:
                 p.mb-0  
                 p.mb-0    https://cra.link/deployment
-    p.mb-5(data-aos="fade-right") Este comando genera la carpeta build con la versión compilada y minificada del proyecto React SPA (Single Page Application). A continuación, se describirá cómo debe quedar la organización y el registro de este proceso.
+    p.mb-5(data-aos="fade-right") Este comando genera la carpeta #[b build] con la versión compilada y minificada del proyecto React SPA (#[i Single Page Application]). A continuación, se describirá cómo debe quedar la organización y el registro de este proceso.
     .row.justify-content-center.mb-5
       .col-lg-9(data-aos="fade-left")
         .row

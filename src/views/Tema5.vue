@@ -5,7 +5,7 @@
     .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 5
-      h1 Spring
+      h1 #[i Framework] Spring
     .row.align-items-center.mb-5
       .col-lg-9.order-2.order-lg-1(data-aos="fade-right")
         p.mb-0 Spring es un #[i framework] de código abierto que facilita la creación de aplicaciones empresariales de alto rendimiento en Java. Además de Java, tiene soporte para los lenguajes Groovy y Kotlin. La estructura que lo compone es modular, ofreciendo flexibilidad para implementar una variedad de arquitecturas dependiendo de los requerimientos de las aplicaciones, haciendo que la programación sea lo más ágil posible, rápida y muy segura.
@@ -21,13 +21,13 @@
                 img(src='@/assets/curso/tema5/img2.png', style='width: 100px', alt='').m-auto
             .col(data-aos="fade-left")
               p.mb-0 #[b Historia]
-              p.mb-0 Rod Johnson, creador de Spring, se dio cuenta de que necesitaban una herramienta para simplificar y facilitar la construcción de aplicaciones JEE utilizando EJB. Escribió el libro #[i Expert One-on-One J2EE Development], que es un conjunto de buenas prácticas para la creación de aplicaciones empresariales. En el año 2 004, lanzó la primera versión 1.2.6 de Spring, marcando el inicio de J2EE tradicional (Johnson, 2004).
-    p.mb-5 La siguiente figura presenta las versiones de Spring Framework:
-    .row.justify-content-center
+              p.mb-0 Rod Johnson, creador de Spring, se dio cuenta de que necesitaban una herramienta para simplificar y facilitar la construcción de aplicaciones JEE utilizando EJB. Escribió el libro #[i Expert One-on-One J2EE Development], que es un conjunto de buenas prácticas para la creación de aplicaciones empresariales. En el año 2004, lanzó la primera versión 1.2.6 de Spring, marcando el inicio de J2EE tradicional (Johnson, 2004).
+    p.mb-5 La siguiente figura presenta las versiones de Spring #[i Framework]:
+    .row.justify-content-center.mb-5
       .col-lg-10(data-aos="fade-down")
         .p-4.p-lg-5.bg-c4
           .titulo-sexto.color-acento-contenido.mb-4
-            p.mb-0 #[b Figura 20.] Versiones de Spring Framework
+            p.mb-0 #[b Figura 20.] Versiones de Spring #[i Framework]
           figure.d-none.d-lg-block
             img(src='@/assets/curso/tema5/img3.png', style='width: 1000px', alt='Línea de tiempo que muestra la evolución del framework Spring, destacando versiones importantes desde 2003 hasta 2019, incluyendo el lanzamiento de Spring Boot y Spring IO.').m-auto
           figure.d-block.d-lg-none
@@ -44,7 +44,7 @@
               figure
                 img(src='@/assets/curso/tema5/img1.svg', style='width: 60px', alt='').m-auto
             .col
-              p.mb-0 #[b Flexibilidad].
+              p.mb-0 #[b Flexibilidad]
               p.mb-0 Contiene un grupo flexible de librerías y extensiones de terceros de Spring, facilitando a los desarrolladores construir aplicaciones fácilmente.
           .bg-c23.mb-3
           .row.align-items-center.mb-3
@@ -52,7 +52,7 @@
               figure
                 img(src='@/assets/curso/tema5/img2.svg', style='width: 60px', alt='').m-auto
             .col
-              p.mb-0 #[b Inyección de dependencia (DI)].
+              p.mb-0 #[b Inyección de dependencia (DI)]
               p.mb-0 Ofrece un patrón que permite ayudar en el acoplamiento bajo. Esto significa que cuando existen dependencias entre las clases y se necesita crear un objeto de esta clase, Spring suministra este objeto, obteniendo beneficios en la modularidad, escalabilidad y dependencia de clases.
           .bg-c23.mb-3
           .row.align-items-center.mb-3
@@ -60,7 +60,7 @@
               figure
                 img(src='@/assets/curso/tema5/img3.svg', style='width: 60px', alt='').m-auto
             .col
-              p.mb-0 #[b POJOs (#[i Plain Old Java Objects])].
+              p.mb-0 #[b POJOs (#[i Plain Old Java Objects])]
               p.mb-0 Facilita un sencillo desarrollo por medio de los POJOs.
           .bg-c23.mb-3
           .row.align-items-center.mb-3
@@ -68,7 +68,7 @@
               figure
                 img(src='@/assets/curso/tema5/img4.svg', style='width: 60px', alt='').m-auto
             .col
-              p.mb-0 #[b ORM (#[i Object Relational Mapping])].
+              p.mb-0 #[b ORM (#[i Object Relational Mapping])]
               p.mb-0 Suministra un fácil acceso a datos por medio del ORM.
           .bg-c23.mb-3
           .row.align-items-center
@@ -76,9 +76,9 @@
               figure
                 img(src='@/assets/curso/tema5/img5.svg', style='width: 60px', alt='').m-auto
             .col
-              p.mb-0 #[b Estructura y módulos].
+              p.mb-0 #[b Estructura y módulos]
               p.mb-0 Spring integra una variedad de módulos que se pueden integrar para el desarrollo de aplicaciones.
-    p.mb-5(data-aos="fade-right") A continuación, se detalla lo que se puede crear con Spring Framework: aplicaciones de consola, aplicaciones de escritorio, aplicaciones web, aplicaciones móviles, servicios SOAP y REST. Spring está orientado esencialmente al back-end.
+    p.mb-5(data-aos="fade-right") A continuación, se detalla lo que se puede crear con Spring #[i Framework]: aplicaciones de consola, aplicaciones de escritorio, aplicaciones web, aplicaciones móviles, servicios SOAP y REST. Spring está orientado esencialmente al #[i back-end].
     .row(data-aos="fade-right")
       .col-lg.m-lg-2.mb-4.mb-lg-0
         .row.h-100
@@ -119,7 +119,7 @@
                 img(src="@/assets/curso/tema5/img9.svg", style="width: 80px", alt="alt").m-auto
           .col.bg-c16
             .p-3
-              p.mb-0 #[b Reactive]
+              p.mb-0 #[b #[i Reactive]]
               p.mb-0 Permite la creación de proyectos reactivos basados en mensajes.
       .col-lg.m-lg-2.mb-4.mb-lg-0
         .row.h-100
@@ -139,7 +139,7 @@
                 img(src="@/assets/curso/tema5/img11.svg", style="width: 80px", alt="alt").m-auto
           .col.bg-c16
             .p-3
-              p.mb-0 #[b Batch]
+              p.mb-0 #[b #[i Batch]]
               p.mb-0 Aplicaciones de procesamiento de datos en lote.
     Separador
     #t_5_1
@@ -159,14 +159,14 @@
                         figure
                           img(src="@/assets/curso/tema5/img12.svg", style="width: 80px", alt="alt").m-auto
                       .col
-                        p.mb-0 La implementación de este principio se llama Inversión de Control (IoC), que se encarga de desacoplar el código utilizando eventos. Este principio también se conoce como el principio de Hollywood: "no nos llames; nosotros te llamaremos". Consiste en una manera de programar donde la aplicación interviene en lugar del código. Para implementar el IoC, se necesita un agente externo llamado contenedor, que es el encargado de verificar el flujo de la aplicación. Los IoC utilizan Service Locator, eventos y DI (inyecciones de dependencias), enfocando el Spring Framework en la DI.
+                        p.mb-0 La implementación de este principio se llama Inversión de Control (IoC), que se encarga de desacoplar el código utilizando eventos. Este principio también se conoce como el principio de Hollywood: "no nos llames; nosotros te llamaremos". Consiste en una manera de programar donde la aplicación interviene en lugar del código. Para implementar el IoC, se necesita un agente externo llamado contenedor, que es el encargado de verificar el flujo de la aplicación. Los IoC utilizan Service Locator, eventos y DI (inyecciones de dependencias), enfocando el Spring #[i Framework] en la DI.
             .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
               figure
                 img(src="@/assets/curso/tema5/img6.png", style="width: 300px", alt="alt").m-auto
           .row
             .col-12
               .p-4.bg-c46(data-aos="fade-down")
-                p.mb-5 #[b Inyección de dependencias:] es un patrón de diseño de software, subtipo de inversión de control, cuyo objetivo es tener un código fácil de mantener o desacoplado. Su función es determinar lo que los objetos necesitan.
+                p.mb-5 #[b Inyección de dependencias:] es un patrón de diseño de #[i software], subtipo de inversión de control, cuyo objetivo es tener un código fácil de mantener o desacoplado. Su función es determinar lo que los objetos necesitan.
                 .row.justify-content-center
                   .col-lg-7
                     .p-4.p-lg-5.bg-c4
@@ -214,7 +214,7 @@
               h3.text-white Módulos del #[i Framework]
     .row.mb-5
       .col-lg-8.order-2.order-lg-1(data-aos="fade-right")
-        p Spring Framework es un marco de trabajo muy amplio y brinda cerca de 20 módulos, los cuales se asocian en el contenedor principal: accesos e integración de datos, Web, AOP (Programación orientada a aspectos), Instrumentación, Mensajes y Pruebas (Spring, 2021).
+        p Spring #[i Framework] es un marco de trabajo muy amplio y brinda cerca de 20 módulos, los cuales se asocian en el contenedor principal: accesos e integración de datos, web, AOP (Programación orientada a aspectos), instrumentación, mensajes y pruebas (Spring, 2021).
         p Para trabajar con Spring se necesita tener instalados los siguientes requerimientos:
         .row
           .col-lg-6
@@ -225,7 +225,7 @@
                     p.text-center.mb-0 #[b Un entorno de desarrollo (IDE).]
                 .col-12.bg-c10
                   .p-4
-                    p.mb-0 Se puede seleccionar cualquiera de los relacionados en la tabla No 1.
+                    p.mb-0 Se puede seleccionar cualquiera de los relacionados en la tabla No 6.
           .col-lg-6
             .p-4
               .row
@@ -234,7 +234,7 @@
                     p.text-center.mb-0 #[b Un JDK (Kit de desarrollo de Java).]
                 .col-12.bg-c10
                   .p-4
-                    p.mb-0 Se puede descargar cualquiera de los relacionados en la tabla No 2.
+                    p.mb-0 Se puede descargar cualquiera de los relacionados en la tabla No 7.
       .col-lg-4.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src="@/assets/curso/tema5/img7.png", style="width: 370px", alt="alt").m-auto
@@ -290,21 +290,21 @@
                   td #[b AdoptOpenJDK]
                   td 
                     a(href="https://adoptopenjdk.net/" target="_blank") https://adoptopenjdk.net/
-    p.mb-5(data-aos="fade-right") Para construir aplicaciones en Spring Framework necesitamos:
+    p.mb-5(data-aos="fade-right") Para construir aplicaciones en Spring #[i Framework] necesitamos:
     .tarjeta.tarjeta--gris.mb-5(data-aos="fade-left")
       .p-4.p-lg-5
         PasosB.color-primario
+          .row.m-1(titulo="Paso")
+            .col-lg-4.mb-4.mb-lg-0
+              p.mb-0 #[b Elegir Jars con Maven:] lo primero que se debe hacer es crear un proyecto Maven o Gradle y realizar la descarga de las dependencias necesarias.
+            .col-lg-8
+              figure
+                img(src='@/assets/curso/tema5/img9.png', style='width: 650px', alt='').m-auto
           .row.m-1(titulo="Paso")
             .col-12
               p Configuración de las dependencias en el archivo pom.xml.
               figure
                 img(src='@/assets/curso/tema5/img8.png', style='width: 850px', alt='').m-auto
-          .row.m-1(titulo="Paso")
-            .col-lg-4.mb-4.mb-lg-0
-              p.mb-0 Elegir Jars con Maven: lo primero que se debe hacer es crear un proyecto Maven o Gradle y realizar la descarga de las dependencias necesarias.
-            .col-lg-8
-              figure
-                img(src='@/assets/curso/tema5/img9.png', style='width: 650px', alt='').m-auto
           .row.m-1(titulo="Paso")
             .col-lg-4.mb-4.mb-lg-0
               p.mb-0 Las dependencias se deben listar en la carpeta Dependencias.
@@ -675,7 +675,7 @@
     #t_5_3
     .titulo-segundo.color-acento-contenido
       h2 5.3 Spring Boot y MySQL
-    p(data-aos="fade-right") Spring Boot es una infraestructura liviana que suprime en gran parte la tarea de configurar las aplicaciones fundamentadas en Spring. A diferencia de Spring Framework, Spring Boot realiza una simplificación en cuanto a configuración y el despliegue de las aplicaciones.
+    p(data-aos="fade-right") Spring Boot es una infraestructura liviana que suprime en gran parte la tarea de configurar las aplicaciones fundamentadas en Spring. A diferencia de Spring #[i Framework], Spring Boot realiza una simplificación en cuanto a configuración y el despliegue de las aplicaciones.
     p.mb-5(data-aos="fade-right") Las características de Spring Boot son:
     .row.align-items-center.mb-4
       .col-lg-9.order-2.order-lg-1(data-aos="fade-right")
@@ -737,7 +737,7 @@
     .row.align-items-center.mb-5
       .col-lg-10.order-2.order-lg-1(data-aos="fade-right")
         p Son los encargados de brindar una variedad de dependencias que se agregan al proyecto; estas pueden ser de terceros o de Spring. Los starters por defecto traen una configuración de valores predeterminados.
-        p.mb-0 Otra de las ventajas de Spring Boot es que ofrece un mecanismo que genera la estructura del proyecto automáticamente. Este inicializador crea el archivo pom.xml, el main de la aplicación y un archivo de test para verificar que la aplicación funcione correctamente.
+        p.mb-0 Otra de las ventajas de Spring Boot es que ofrece un mecanismo que genera la estructura del proyecto automáticamente. Este inicializador crea el archivo pom.xml, el #[i main] de la aplicación y un archivo de #[i test] para verificar que la aplicación funcione correctamente.
       .col-lg-2.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src="@/assets/curso/tema5/img29.svg", style="width: 200px", alt="alt").m-auto
@@ -752,7 +752,7 @@
       .col-12
         .p-5
           p.mb-5(data-aos="fade-right") A continuación, se realizan los pasos para la creación de un proyecto en Spring Boot. Hay que recordar que se deben tener instaladas cualquiera de las herramientas de Entorno de desarrollo y JDK.
-          .row.justify-content-center
+          .row.justify-content-center.mb-5
             .col-lg-8(data-aos="fade-left")
               AcordionA(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
                 .row(titulo="Comienza un nuevo proyecto")
@@ -771,6 +771,7 @@
                     p.mb-5 #[b mvn spring-boot:run]
                     figure
                       img(src='@/assets/curso/tema5/img18.png', style='width: 650px', alt='Salida de terminal mostrando el proceso de arranque de una aplicación Spring Boot usando Maven, incluyendo mensajes de log sobre la inicialización y el arranque de la aplicación, la configuración de Tomcat y el contexto de la aplicación Spring.').m-auto
+          p.mb-0 Lo que hace es ejecutar el servidor Tomcat que ya viene por defecto dentro de Spring Boot. Ahora se debe ingresar al navegador y escribir "localhost" con el puerto 8080, y se presentará la ejecución de la aplicación. En la siguiente videoclase se explica de forma más detallada cómo utilizar Spring Boot:
     .row.justify-content-center.mb-5
       .col-lg-10
         figure(data-aos="fade-down")
@@ -792,14 +793,14 @@
         PasosB.color-primario
           .row.m-1(titulo="Paso")
             .col-12
-              p.mb-5 #[b Después de agregar las dependencias], clic en GENERATE y descargará un archivo zip el cuál se debe descomprimir y después importar el proyecto en el IDE, en este caso Spring Tool Suite.
-              figure
-                img(src='@/assets/curso/tema5/img19.png', style='width: 850px', alt='Captura de pantalla del Spring Initializr mostrando la configuración de un nuevo proyecto Spring Boot. Se han seleccionado varias dependencias como Spring Web, MySQL Driver, y Spring Data JPA, que están destacadas en la interfaz.').m-auto
-          .row.m-1(titulo="Paso")
-            .col-12
               p.mb-5 #[b Declarar dependencias]. JPA, MySQL JDBC Driver, Web. Como se mostró en el ejemplo anterior, por medio del inicializador se pueden seleccionar las dependencias requeridas, como se muestra en la siguiente imagen.
               figure
                 img(src='@/assets/curso/tema5/img20.png', style='width: 650px', alt='Vista del IDE Eclipse con el panel "Package Explorer" vacío, mostrando opciones como "Create Spring Starter Project" e "Import projects", con un enfoque en la opción "Import projects".').m-auto
+          .row.m-1(titulo="Paso")
+            .col-12
+              p.mb-5 #[b Después de agregar las dependencias], clic en GENERATE y descargará un archivo zip el cuál se debe descomprimir y después importar el proyecto en el IDE, en este caso Spring Tool Suite.
+              figure
+                img(src='@/assets/curso/tema5/img19.png', style='width: 850px', alt='Captura de pantalla del Spring Initializr mostrando la configuración de un nuevo proyecto Spring Boot. Se han seleccionado varias dependencias como Spring Web, MySQL Driver, y Spring Data JPA, que están destacadas en la interfaz.').m-auto
           .row.m-1(titulo="Paso")
             .col-12
               p.mb-5 #[b Importar el proyecto]. Una vez importado el proyecto, se puede ver cómo queda la estructura.
@@ -816,7 +817,6 @@
           .col-12
             .px-4.py-3.bg-c21
               pre
-                p.mb-0  así:
                 p.mb-0  1.spring.jpa.hibernate.ddl-auto=update
                 p.mb-0  2.spring.datasource.url=jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf8&createDatabaseIfNotExist=true
                 p.mb-0  3.spring.datasource.username=root

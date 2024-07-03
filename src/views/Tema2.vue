@@ -5,7 +5,7 @@
     .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 2
-      h1 #[i Servlets] y JSP
+      h1 Servlets y JSP
     .row.mb-5
       .col-auto.d-none.d-md-block(data-aos="fade-right")
         figure.mt-1
@@ -37,14 +37,14 @@
               SlyderA(tipo="b")
                 .row.m-1
                   .col-lg-6.mb-4.mb-lg-0
-                    p #[b Los #[i servlets]]
+                    p #[b Los servlets]
                     p.mb-0 Adecuan el proceso de las peticiones que entran al servidor, procesan los datos de formularios, generan contenidos de varios tipos y redireccionan las peticiones.
                   .col-lg-6
                     figure
                       img(src='@/assets/curso/tema2/img2.png', alt='')
                 .row.m-1
                   .col-lg-6.mb-4.mb-lg-0
-                    p #[b JSP (#[i Java Server Pages])]
+                    p #[b JSP (#[i JavaServer Pages])]
                     p.mb-0 Es un código Java que se ejecuta en un servidor remoto. Lee las acciones del usuario desde formularios HTML, donde el servidor realiza consultas, usualmente a bases de datos, para obtener la información solicitada y devolver una página HTML dinámica y en tiempo real.
                   .col-lg-6
                     figure
@@ -85,7 +85,7 @@
     Separador
     #t_2_1
     .titulo-segundo.color-acento-contenido
-      h2 2.1 Introducción a #[i servlets]
+      h2 2.1 Introducción a servlets
     p.mb-5(data-aos="fade-right") Servlet es un programa que se lleva a cabo en una aplicación o servidor web; se emplea como una capa que intercede entre la base de datos y el servidor de peticiones HTTP, por medio de un navegador web o cualquier otro cliente HTTP (Gómez, 2017).
     .row.justify-content-center.mb-5
       .col-lg-8
@@ -136,7 +136,7 @@
           .col.bg-c16
             .p-3
               p.mb-0 #[b Remisión de peticiones HTTP]
-              p.mb-0 Remite una petición HTTP de los datos contenidos en el navegador, incluyendo cookies.
+              p.mb-0 Remite una petición HTTP de los datos contenidos en el navegador, incluyendo #[i cookies].
         .row.mb-2
           .col-md-auto.bg-c15
             .p-3
@@ -181,12 +181,12 @@
         figure.mt-1
           img(src="@/assets/curso/tema1/img9.svg", style="width: 70px", alt="").m-auto
       .col(data-aos="fade-left")
-        p.mb-0 A diferencia de las clases en Java, que inician con un método main(), en los #[i servlets] se invocan ciertos métodos al recibir peticiones. A esta metodología se le llama ciclo de vida de un #[i servlet] y se compone de tres métodos: #[i init], #[i service] y #[i destroy].
+        p.mb-0 A diferencia de las clases en Java, que inician con un método main(), en los servlets se invocan ciertos métodos al recibir peticiones. A esta metodología se le llama ciclo de vida de un servlet y se compone de tres métodos: init, service y destroy.
     .row.justify-content-center.mb-5
       .col-lg-8
         .p-4.bg-c4(data-aos="fade-up")
           .titulo-sexto.color-acento-contenido.mb-4
-            p.mb-0 #[b Figura 4]. Ciclo de vida de un #[i Servlets]
+            p.mb-0 #[b Figura 4]. Ciclo de vida de un Servlets
           figure
             img(src="@/assets/curso/tema2/img16.svg", style="width: 500px", alt="Flujo de proceso de un Servlet en Java, detallando el ciclo de vida desde la inicialización hasta la destrucción, incluyendo los métodos service, doGet y doPost.").m-auto
     p(data-aos="fade-right") Conocer el ciclo de vida de un Servlet; procurar llevar registro, en la libreta personal de apuntes, de los aspectos más importantes y destacados.
@@ -276,7 +276,7 @@
               figure
                 img(src='@/assets/curso/tema2/img24.svg', style='width: 50px', alt='').m-auto
             .col
-              p.mb-0 EI método #[b doGet] recibe dos argumentos: #[b request] (para procesar la petición) y response (para dar respuesta a la petición).
+              p.mb-0 EI método #[b doGet] recibe dos argumentos: #[b request] (para procesar la petición) y #[b response] (para dar respuesta a la petición).
           .bg-c23.mb-3
           .row.align-items-center
             .col-auto.pe-0
@@ -296,7 +296,7 @@
           Separador
           #t_2_2
           .titulo-segundo.color-acento-contenido
-            h2 2.2 Formularios HTML con #[i Servlets]
+            h2 2.2 Formularios HTML con Servlets
           .row.align-items-center.mb-5
             .col-lg-9.order-2.order-lg-1(data-aos="fade-right")
               p Las páginas web contienen formularios HTML para la solicitud de información al usuario. El proceso de recolección de datos y respuesta de este formulario se debe realizar por medio de un programa. Esto lo hace un servlet que recoge las peticiones de un formulario y las procesa.
@@ -346,13 +346,14 @@
               figure
                 img(src='@/assets/curso/tema2/img28.svg', style='width: 70px', alt='').m-auto
             .col
-              p.text-white.mb-0 El método utilizado para obtener la sesión de un usuario es getSession () este método regresa una interfaz de tipo HttpSession, Esta interfaz está dentro del paquete javax. servlet.http y es usada por el contenedor de páginas JSP que permite la creación de una sesión entre el cliente y el servidor.
+              p.text-white.mb-0 El método utilizado para obtener la sesión de un usuario es #[b getSession()] este método regresa una interfaz de tipo #[b HttpSession], Esta interfaz está dentro del paquete javax. #[b servlet.http] y es usada por el contenedor de páginas JSP que permite la creación de una sesión entre el cliente y el servidor.
+              p.text-white.mb-0 #[b <%HttpSession session = request.getSession(); %>]
     p.mb-5(data-aos="fade-right") A continuación, se puede conocer el funcionamiento básico de las sesiones:
     .row.justify-content-center.mb-5
       .col-lg-8
         .p-4.bg-c4(data-aos="fade-down")
           .titulo-sexto.color-acento-contenido.mb-4
-            p.mb-0 #[b Figura 5]. HTTP Session
+            p.mb-0 #[b Figura 5]. HTTP #[i Session]
           figure.d-none.d-lg-block
             img(src="@/assets/curso/tema2/img29.svg", style="width: 800px", alt="Ilustración de cómo diferentes usuarios interactúan con una aplicación JSP que administra sesiones, detallando operaciones como setAttribute y getAttribute.").m-auto
           figure.d-block.d-lg-none

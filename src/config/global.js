@@ -2,7 +2,7 @@ export default {
   global: {
     componenteFormativo: 'Desarrollo de aplicaciones web con Java',
     descripcionCurso:
-      'El componente proporciona una guía sobre tecnologías y frameworks en el ecosistema Java. Cubre Java con JDBC para la conectividad de bases de datos, Servlets y JSP para el desarrollo web, React JS para interfaces de usuario, Hibernate para ORM, y Spring Framework para aplicaciones empresariales, destacando la inyección de dependencias y la configuración simplificada con Spring Boot.',
+      'El componente proporciona una guía sobre tecnologías y <i>frameworks</i> en el ecosistema Java. Cubre Java con JDBC para la conectividad de bases de datos, Servlets y JSP para el desarrollo web, React JS para interfaces de usuario, Hibernate para ORM, y Spring <i>Framework</i> para aplicaciones empresariales, destacando la inyección de dependencias y la configuración simplificada con Spring Boot.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -54,17 +54,17 @@ export default {
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: '<i>Servlets</i> y JSP',
+        titulo: 'Servlets y JSP',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '2.1',
-            titulo: 'Introducción a <i>Servlets</i>',
+            titulo: 'Introducción a Servlets',
             hash: 't_2_1',
           },
           {
             numero: '2.2',
-            titulo: 'Formulario HTML con <i>Servlets</i>',
+            titulo: 'Formulario HTML con Servlets',
             hash: 't_2_2',
           },
           {
@@ -110,7 +110,7 @@ export default {
       {
         nombreRuta: 'tema4',
         numero: '4',
-        titulo: 'Hibernate',
+        titulo: '<i>Framework</i> Hibernate',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -128,7 +128,7 @@ export default {
       {
         nombreRuta: 'tema5',
         numero: '5',
-        titulo: 'Spring',
+        titulo: '<i>Framework</i> Spring',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -205,13 +205,13 @@ export default {
       referencia:
         'Editor HTML gratuito en línea limpiador y convertidor. (2021, 27 de octubre). <i>Editor HTML gratuito en línea limpiador y convertidor</i>.',
       tipo: 'Página web',
-      link: 'htmled.it/or',
+      link: 'https://htmled.it/or/',
     },
     {
       tema: 'Instalando React',
       referencia: 'Cubic Factory. (2021, 27 de octubre). <i>Cubic Factory</i>.',
       tipo: 'Página web',
-      link: 'cubicfactory.com/jseditor',
+      link: 'https://www.cubicfactory.com/jseditor/',
     },
     {
       tema: 'Propiedades y estados de los componentes',
@@ -272,16 +272,12 @@ export default {
     {
       termino: 'HQL',
       significado:
-        'lenguaje de consulta parecido al SQL implementado por el <i>framework Hibernate</i>.',
-    },
-    {
-      termino: 'HTML',
-      significado: 'lenguaje de marcado hipertexto.',
+        'lenguaje de consulta parecido al SQL implementado por el <i>framework</i> Hibernate.',
     },
     {
       termino: 'HTML',
       significado:
-        'HyperText Markup Language, lenguaje de Marcas de Hipertexto.',
+        ' HyperText Markup Language, lenguaje de Marcas de Hipertexto.',
     },
     {
       termino: 'JAVASCRIPT',
@@ -451,11 +447,11 @@ export default {
     {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
-        //{
-        //  nombre: 'Luis Gabriel Urueta Alvarez',
-        //  cargo: 'Validador de Recursos Educativos Digitales',
-        //  centro: 'Centro de Servicios de Salud - Regional Antioquia',
-        //},
+        {
+          nombre: 'Luis Gabriel Urueta Alvarez',
+          cargo: 'Validador de Recursos Educativos Digitales',
+          centro: 'Centro de Servicios de Salud - Regional Antioquia',
+        },
         //{
         //  nombre: 'Jaime Hernán Tejada Llano',
         //  cargo: 'Validador de Recursos Educativos Digitales',

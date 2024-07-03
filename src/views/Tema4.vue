@@ -5,10 +5,10 @@
     .titulo-principal.color-acento-contenido(data-aos="flip-up")
       .titulo-principal__numero
         span 4
-      h1 Hibernate
+      h1 #[i Framework] Hibernate
     .row.align-items-center.mb-5
       .col-lg-8.order-2.order-lg-1(data-aos="fade-right")
-        p Hibernate es software libre con licencia GNU LGPL que presta servicios de ORM para Java. Es un plugin que puede ser integrado al IDE de desarrollo en Java y facilita el proceso de mapeo de tablas en una base de datos relacional a objetos Java mediante el uso de archivos declarativos en formato XML o anotaciones.
+        p Hibernate es #[i software] libre con licencia GNU LGPL que presta servicios de ORM para Java. Es un #[i plugin] que puede ser integrado al IDE de desarrollo en Java y facilita el proceso de mapeo de tablas en una base de datos relacional a objetos Java mediante el uso de archivos declarativos en formato XML o anotaciones.
         .row
           .col-12
             .p-4.bg-c7
@@ -17,7 +17,7 @@
                   figure
                     img(src='@/assets/curso/tema4/img1.svg', style='width: 90px', alt='').m-auto
                 .col
-                  p.mb-0 “Hibernate utiliza JDBC para todos los procesos de comunicación con la base de datos, funcionando como una capa adicional de abstracción de las funcionalidades del JDBC. En una aplicación Java, podremos delegar la mayoría de las operaciones de bases de datos al framework de Hibernate, pero en segundo plano todo estará pasando por la API de JDBC” (Martinez, 2015).
+                  p.mb-0 “Hibernate utiliza JDBC para todos los procesos de comunicación con la base de datos, funcionando como una capa adicional de abstracción de las funcionalidades del JDBC. En una aplicación Java, podremos delegar la mayoría de las operaciones de bases de datos al #[i framework] de Hibernate, pero en segundo plano todo estará pasando por la API de JDBC” (Martinez, 2015).
       .col-lg-4.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema4/img1.png', style='width: 370px', alt='').m-auto
@@ -36,7 +36,7 @@
             img(src='@/assets/curso/tema4/img3.svg', style='width: 500px', alt='Diagrama que representa la conexión entre una aplicación Java, Hibernate, y una base de datos a través de JDBC, ilustrando el flujo de datos y la estructura de las interacciones.').m-auto
           figure.d-block.d-lg-none
             img(src='@/assets/curso/tema4/img3m.svg', style='width: 170px', alt='Diagrama que representa la conexión entre una aplicación Java, Hibernate, y una base de datos a través de JDBC, ilustrando el flujo de datos y la estructura de las interacciones.').m-auto
-    p.mb-5(data-aos="fade-right") Teniendo en cuenta que Hibernate debe usar el driver JDBC para la ejecución de las instrucciones en la base de datos, se debe construir un archivo de configuración en formato XML donde se especifique la URL del JDBC y las credenciales de acceso a la base de datos. En la siguiente figura se presenta el esquema general de funcionamiento en el proceso de configuración:
+    p.mb-5(data-aos="fade-right") Teniendo en cuenta que Hibernate debe usar el #[i driver] JDBC para la ejecución de las instrucciones en la base de datos, se debe construir un archivo de configuración en formato XML donde se especifique la URL del JDBC y las credenciales de acceso a la base de datos. En la siguiente figura se presenta el esquema general de funcionamiento en el proceso de configuración:
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="fade-down")
         .p-4.p-lg-5.bg-c4
@@ -127,7 +127,7 @@
         .row
           .col-12
             .p-4.bg-c7
-              p.mb-0 Luego de esto, se requiere definir todas las “Entity Classes” que serán utilizadas por Hibernate para realizar el proceso de mapeo hacia una base de datos relacional y viceversa. Una “Entity Class” básicamente es una clase Java tradicional que tiene las mismas características definidas en una tabla de la base de datos, es decir, es una imagen de la tabla, pero desde la perspectiva de la programación orientada a objetos. Adicionalmente, tiene unas anotaciones especiales que le permiten a Hibernate realizar el trabajo adecuado.
+              p.mb-0 Luego de esto, se requiere definir todas las #[b “Entity Classes”] que serán utilizadas por Hibernate para realizar el proceso de mapeo hacia una base de datos relacional y viceversa. Una #[b “Entity Class”] básicamente es una clase Java tradicional que tiene las mismas características definidas en una tabla de la base de datos, es decir, es una imagen de la tabla, pero desde la perspectiva de la programación orientada a objetos. Adicionalmente, tiene unas anotaciones especiales que le permiten a Hibernate realizar el trabajo adecuado.
       .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema4/img3.png', style='width: 300px', alt='').m-auto
@@ -161,16 +161,16 @@
                         td Especifica que la clase definida en una Entity Class.
                       tr
                         td #[b @Table(name = “ ”)]
-                        td Permite especificar que la clase será mapeada con una tabla en la base de datos especificada en la propiedad name.
+                        td Permite especificar que la clase será mapeada con una tabla en la base de datos especificada en la propiedad #[i name].
                       tr
                         td #[b @Column(name = “ ”)]
-                        td Permite especificar que el atributo por ser definido será mapeado con una columna especificada por la propiedad name. Cuando el nombre del atributo coincide con el nombre de la columna en la tabla se puede omitir la especificación de la propiedad name y solo dejar la anotación @Column.
+                        td Permite especificar que el atributo por ser definido será mapeado con una columna especificada por la propiedad #[i name]. Cuando el nombre del atributo coincide con el nombre de la columna en la tabla se puede omitir la especificación de la propiedad #[i name] y solo dejar la anotación @Column.
                       tr
                         td #[b @Id]
                         td Permite especificar que el atributo a definir corresponde con el identificador primario a ser mapeado en la tabla.
           .row.mb-5
             .col.order-2.order-lg-1(data-aos="fade-right")
-              p.mb-0 A continuación, se presenta un corto video donde se agrega el archivo de configuración de Hibernate al proyecto y se crea la clase Entity para la gestión de una tabla en una base de datos MySQL.
+              p.mb-0 A continuación, se presenta un corto video donde se agrega el archivo de configuración de Hibernate al proyecto y se crea la clase #[b Entity] para la gestión de una tabla en una base de datos MySQL.
             .col-md-auto.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
               figure
                 img(src='@/assets/curso/tema4/img6.svg', style='width: 170px', alt='').m-auto
@@ -183,7 +183,7 @@
     #t_4_1
     .titulo-segundo.color-acento-contenido
       h2 4.1 Operaciones básicas
-    p(data-aos="fade-right") Una vez se tienen registradas todas las dependencias, los archivos de configuración de Hibernate y las respectivas clases de entidad, se pueden utilizar las facilidades ofrecidas por Hibernate para la manipulación de la base de datos de forma transparente por medio de los procesos de mapeo que ofrece este framework.
+    p(data-aos="fade-right") Una vez se tienen registradas todas las dependencias, los archivos de configuración de Hibernate y las respectivas clases de entidad, se pueden utilizar las facilidades ofrecidas por Hibernate para la manipulación de la base de datos de forma transparente por medio de los procesos de mapeo que ofrece este #[i framework].
     p.mb-5(data-aos="fade-right") Hibernate utiliza principalmente dos clases que debemos conocer y utilizar, las cuales se describen a continuación:
     .row.justify-content-center.mb-5
       .col-lg-3.mb-4.mb-lg-0(data-aos="fade-right")
@@ -241,8 +241,8 @@
               figure.fig-p1
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
-              h3.text-white Método #[i Save]
-    p.mb-5(data-aos="fade-right") El método save() del objeto Session permite realizar el proceso de inserción de un nuevo registro en la base de datos enviando como parámetro un objeto de tipo entidad con sus valores. La forma correcta de realizar un proceso de inserción de un nuevo registro en una base de datos con un objeto de tipo sesión incluye los siguientes pasos:
+              h3.text-white Método Save
+    p.mb-5(data-aos="fade-right") El método #[b save()] del objeto #[b Session] permite realizar el proceso de inserción de un nuevo registro en la base de datos enviando como parámetro un objeto de tipo entidad con sus valores. La forma correcta de realizar un proceso de inserción de un nuevo registro en una base de datos con un objeto de tipo sesión incluye los siguientes pasos:
     .row.justify-content-center.mb-4(data-aos="fade-right")
       .col-10.col-md-6.col-lg-3.mb-4
         .tarjeta-avatar
@@ -250,7 +250,7 @@
           .tarjeta.color-secundario
             .text-white.p-4
               p.text-center #[b 1]
-              p.text-center Iniciar una transacción por mecio del método #[i beginTransaction()].
+              p.text-center Iniciar una transacción por mecio del método #[b beginTransaction()].
       .col-10.col-md-6.col-lg-3.mb-4
         .tarjeta-avatar
           img(src='@/assets/curso/tema4/img8.svg' alt='AvatarTop')
@@ -264,14 +264,14 @@
           .tarjeta.color-secundario
             .text-white.p-4
               p.text-center #[b 3]
-              p.text-center Invocar el método #[i save()] de la sesión enviando corno parámetro el objeto de la clase entdad.
+              p.text-center Invocar el método #[b save()] de la sesión enviando como parámetro el objeto de la clase entidad.
       .col-10.col-md-6.col-lg-3.mb-4
         .tarjeta-avatar
           img(src='@/assets/curso/tema4/img10.svg' alt='AvatarTop')
           .tarjeta.color-secundario
             .text-white.p-4
               p.text-center #[b 4]
-              p.text-center Confirmarla transacción realizada por medio del método #[i mit()].
+              p.text-center Confirmarla transacción realizada por medio del método #[b mit()].
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="fade-left")
         .row
@@ -329,10 +329,10 @@
               figure.fig-p1
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
-              h3.text-white Método #[i Get]
+              h3.text-white Método Get
     .row.align-items-center.mb-5
       .col-lg-9.order-2.order-lg-1(data-aos="fade-right")
-        p El método get() del objeto session permite obtener un registro de la base de datos por medio de una consulta por su llave primaria. Este método recibe como parámetro la clase de entidad que será utilizada para hacer el mapeo del registro en la respuesta y un segundo parámetro que corresponde al valor a ser buscado en la llave primaria de la tabla. Este método ofrece como resultado un objeto de la clase de entidad especificada en la invocación del método.
+        p El método #[b get()] del objeto #[b session] permite obtener un registro de la base de datos por medio de una consulta por su llave primaria. Este método recibe como parámetro la clase de entidad que será utilizada para hacer el mapeo del registro en la respuesta y un segundo parámetro que corresponde al valor a ser buscado en la llave primaria de la tabla. Este método ofrece como resultado un objeto de la clase de entidad especificada en la invocación del método.
         .row.mb-4
           .col-auto
             figure.mt-1
@@ -347,7 +347,7 @@
                   figure
                     img(src='@/assets/curso/tema2/img22.svg', style='width: 60px', alt='').m-auto
                 .col
-                  p.mb-0 Iniciar una transacción por medio del método #[b #[i beginTransaction()]].
+                  p.mb-0 Iniciar una transacción por medio del método #[b beginTransaction()].
           .col-12
             .px-4.py-3.bg-c9
               .row.align-items-center
@@ -355,7 +355,7 @@
                   figure
                     img(src='@/assets/curso/tema2/img23.svg', style='width: 60px', alt='').m-auto
                 .col
-                  p.mb-0 Invocar el método #[b #[i get()]] de la sesión, enviando como parámetro la clase de tipo entidad para hacer el mapeo y el valor de la llave primaria a buscar. La invocación de este método requiere de un objeto compatible que reciba el resultado.
+                  p.mb-0 Invocar el método #[b get()] de la sesión, enviando como parámetro la clase de tipo entidad para hacer el mapeo y el valor de la llave primaria a buscar. La invocación de este método requiere de un objeto compatible que reciba el resultado.
           .col-12
             .px-4.py-3.bg-c11
               .row.align-items-center
@@ -363,7 +363,7 @@
                   figure
                     img(src='@/assets/curso/tema2/img24.svg', style='width: 60px', alt='').m-auto
                 .col
-                  p.mb-0 Confirmar la transacción realizada por medio del método #[b #[i getTransaction().commit()]].
+                  p.mb-0 Confirmar la transacción realizada por medio del método #[b getTransaction().commit()].
       .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema4/img10.png', style='width: 300px', alt='').m-auto
@@ -420,7 +420,7 @@
               figure.fig-p1
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
-              h3.text-white Método #[i CreateQuery]
+              h3.text-white Método CreateQuery
     .row.align-items-center.mb-5
       .col-lg-8.order-2.order-lg-1(data-aos="fade-right")
         p Hibernate permite el proceso de creación de consultas usando HQL, el cual es una versión especial de Hibernate para establecer consultas SQL orientadas a objetos y que comprende nociones propias del paradigma orientado a objetos, como la herencia, el polimorfismo y las asociaciones. Es importante tener en cuenta que, aunque las palabras reservadas y sentencias de SQL no son sensibles a mayúsculas, los nombres de las clases y sus atributos usados en HQL sí lo son.
@@ -432,7 +432,7 @@
                   figure
                     img(src='@/assets/curso/tema4/img11.svg', style='width: 70px', alt='').m-auto
                 .col
-                  p.mb-0 Para el caso en el que se requiera realizar consultas más avanzadas, se puede utilizar la potencia de HQL para establecer las características de los registros a ser consultados. Como este tipo de consulta puede producir más de un registro proveniente de la base de datos, es necesario usar el método #[b #[i getResultList()]] para mapear la respuesta a una lista de objetos Java. En la siguiente tabla se presentan algunas de las cláusulas HQL más comúnmente utilizadas. Se debe tener en cuenta que en HQL se hace referencia a las clases de entidad Java con sus atributos, los cuales son sensibles a mayúsculas. Estas sentencias son mapeadas a su estructura equivalente en la base de datos usando los nombres de tablas y atributos, los cuales ya no son sensibles a mayúsculas.
+                  p.mb-0 Para el caso en el que se requiera realizar consultas más avanzadas, se puede utilizar la potencia de HQL para establecer las características de los registros a ser consultados. Como este tipo de consulta puede producir más de un registro proveniente de la base de datos, es necesario usar el método #[b getResultList()] para mapear la respuesta a una lista de objetos Java. En la siguiente tabla se presentan algunas de las cláusulas HQL más comúnmente utilizadas. Se debe tener en cuenta que en HQL se hace referencia a las clases de entidad Java con sus atributos, los cuales son sensibles a mayúsculas. Estas sentencias son mapeadas a su estructura equivalente en la base de datos usando los nombres de tablas y atributos, los cuales ya no son sensibles a mayúsculas.
       .col-lg-4.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema4/img7.png', style='width: 400px', alt='').m-auto
@@ -544,7 +544,7 @@
               h3.text-white Actualizaciones
     .row.mb-5
       .col-lg-9.order-2.order-lg-1(data-aos="fade-right")
-        p.mb-0 El proceso de actualización es muy similar al proceso de consulta. Se puede hacer uso directo de los objetos obtenidos de las clases de entidad mediante los métodos modificadores de sus atributos (métodos #[b #[i set()]]) y confirmar las transacciones realizadas. También se puede hacer uso de #[b #[i createQuery()]], el cual permite enviar consultas HQL un poco más elaboradas, pero asociándolo con el método #[b #[i executeUpdate()]] para que los cambios se reflejen en la base de datos una vez se confirma la transacción.
+        p.mb-0 El proceso de actualización es muy similar al proceso de consulta. Se puede hacer uso directo de los objetos obtenidos de las clases de entidad mediante los métodos modificadores de sus atributos (métodos #[b set()]) y confirmar las transacciones realizadas. También se puede hacer uso de #[b createQuery()], el cual permite enviar consultas HQL un poco más elaboradas, pero asociándolo con el método #[b executeUpdate()] para que los cambios se reflejen en la base de datos una vez se confirma la transacción.
       .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema4/img12.svg', style='width: 300px', alt='').m-auto
@@ -646,8 +646,8 @@
               figure.fig-p1
                 img(src='@/assets/curso/tema2/img15.svg', style="width:50px" alt='').m-auto
             .col
-              h3.text-white Método #[i Delete]
-    p.mb-5(data-aos="fade-right") El método #[b #[i delete()]] del objeto session permite eliminar un registro de la base de datos mediante un objeto recibido como parámetro, que identifica el registro de la tabla a eliminar. La forma correcta de realizar un proceso de eliminación de un registro particular incluye los siguientes pasos:
+              h3.text-white Método Delete
+    p.mb-5(data-aos="fade-right") El método #[b delete()] del objeto #[b session] permite eliminar un registro de la base de datos mediante un objeto recibido como parámetro, que identifica el registro de la tabla a eliminar. La forma correcta de realizar un proceso de eliminación de un registro particular incluye los siguientes pasos:
     .row.mb-5
       .col-auto.pe-0.d-none.d-lg-block(data-aos="fade-right")
         figure
@@ -805,7 +805,7 @@
         figure.mt-1
           img(src="@/assets/curso/tema4/img2.svg", style="width: 70px", alt="").m-auto
       .col(data-aos="fade-left")
-        p.mb-0 En este tipo de relaciones, se quiere expresar un vínculo en el que un ejemplar de una tabla tiene relación con uno y solo un ejemplar de una segunda tabla. Desde el punto de vista de las bases de datos, se creará una relación de integridad referencial vinculando una llave primaria con una llave foránea. Tomando como referencia el modelo de datos presentado anteriormente, supongamos que se desea indicar que un usuario tiene asociado un recurso. Para resolver este nuevo requerimiento, debemos modificar la clase de entidad de usuario para agregar un nuevo atributo que haga referencia al objeto recurso con el cual está relacionado y agregar la anotación correspondiente llamada #[b #[i @OneToOne]], de forma que Hibernate haga el mapeo correcto. El esquema se detalla a continuación en la siguiente figura:
+        p.mb-0 En este tipo de relaciones, se quiere expresar un vínculo en el que un ejemplar de una tabla tiene relación con uno y solo un ejemplar de una segunda tabla. Desde el punto de vista de las bases de datos, se creará una relación de integridad referencial vinculando una llave primaria con una llave foránea. Tomando como referencia el modelo de datos presentado anteriormente, supongamos que se desea indicar que un usuario tiene asociado un recurso. Para resolver este nuevo requerimiento, debemos modificar la clase de entidad de usuario para agregar un nuevo atributo que haga referencia al objeto recurso con el cual está relacionado y agregar la anotación correspondiente llamada #[b #[i OneToOne]], de forma que Hibernate haga el mapeo correcto. El esquema se detalla a continuación en la siguiente figura:
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="fade-up")
         .p-4.p-lg-5.bg-c4
@@ -817,7 +817,7 @@
             img(src='@/assets/curso/tema4/img18m.svg', style='width: 570px', alt='Diagrama de la entidad "Usuario" con una relación uno a uno a una entidad "Recurso", visualizando las conexiones entre las tablas correspondientes en la base de datos.').m-auto
     .row.align-items-center.mb-5
       .col.mb-4.mb-md-0(data-aos="fade-right")
-        p.mb-0 Mientras que en la base de datos se debe agregar un nuevo campo foráneo en la tabla usuario que haga referencia a la llave primaria de la tabla recurso para poder establecer la relación, en las clases de tipo entidad bastará con especificar el nuevo atributo del tipo de objeto correspondiente que referencia agregando la anotación de tipo #[b #[i @OneToOne]]. Si el campo nuevo requerido en la tabla usuario no existe, el mapeador de Hibernate se encargará de agregarlo.
+        p.mb-0 Mientras que en la base de datos se debe agregar un nuevo campo foráneo en la tabla usuario que haga referencia a la llave primaria de la tabla recurso para poder establecer la relación, en las clases de tipo entidad bastará con especificar el nuevo atributo del tipo de objeto correspondiente que referencia agregando la anotación de tipo #[b #[i OneToOne]]. Si el campo nuevo requerido en la tabla usuario no existe, el mapeador de Hibernate se encargará de agregarlo.
       .col-md-auto(data-aos="fade-left")
         figure
           img(src="@/assets/curso/tema4/img19.svg", style="width: 120px", alt="").m-auto
@@ -850,11 +850,11 @@
         figure
           img(src='@/assets/curso/tema4/img12.png', style='width: 300px', alt='').m-auto
       .col-lg-9(data-aos="fade-left")
-        p Para el caso de las clases de entidad, deberá especificarse en la clase donde la cardinalidad máxima es 1, un atributo del tipo lista de la clase de entidad con la que tiene un vínculo #[b #[i @OneToMany]]. Este atributo será de tipo lista porque se está vinculando con varios. En el ejemplo, la entidad usuario se relaciona con varios recursos, es decir, un usuario puede estar vinculado con múltiples recursos.
+        p Para el caso de las clases de entidad, deberá especificarse en la clase donde la cardinalidad máxima es 1, un atributo del tipo lista de la clase de entidad con la que tiene un vínculo #[b #[i OneToMany]]. Este atributo será de tipo lista porque se está vinculando con varios. En el ejemplo, la entidad usuario se relaciona con varios recursos, es decir, un usuario puede estar vinculado con múltiples recursos.
         .row
           .col-12
             .p-4.bg-c1
-              p.mb-0 Por otra parte, la clase de entidad donde la cardinalidad máxima es muchos deberá especificar un atributo de tipo objeto con la entidad vinculada, agregándole la anotación #[b #[i @ManyToOne]]. En el ejemplo, un recurso estará siempre vinculado con un único usuario. Es importante anexar en la entidad de cardinalidad #[b #[i @OneToMany]] el nombre del atributo en la entidad #[b #[i @ManyToOne]] que será usado para el mapeo de la asociación por parte de Hibernate. En el ejemplo, se indica en la entidad Usuario que la relación #[b #[i @OneToMany]] será mapeada usando el atributo user de la entidad #[b #[i @ManyToOne]].
+              p.mb-0 Por otra parte, la clase de entidad donde la cardinalidad máxima es muchos deberá especificar un atributo de tipo objeto con la entidad vinculada, agregándole la anotación #[b #[i ManyToOne]]. En el ejemplo, un recurso estará siempre vinculado con un único usuario. Es importante anexar en la entidad de cardinalidad #[b #[i OneToMany]] el nombre del atributo en la entidad #[b #[i ManyToOne]] que será usado para el mapeo de la asociación por parte de Hibernate. En el ejemplo, se indica en la entidad Usuario que la relación #[b #[i OneToMany]] será mapeada usando el atributo user de la entidad #[b #[i ManyToOne]].
     .row.mb-4.pt-4(data-aos="fade-down")
       .col-auto.bg-c17
         .px-3.pb-0
@@ -870,7 +870,7 @@
           .row.align-items-center.mb-4
             .col-lg-10.order-2.order-lg-1(data-aos="fade-right")
               .p-4.bg-c46
-                p.mb-0 Las relaciones ManyToMany obligan a la construcción de una nueva entidad de mapeo en la cual se alojarán las respectivas llaves primarias de las entidades vinculadas por medio de la relación #[b #[i @ManyToMany]]. Para su correcta implementación, deberán agregarse en cada una de las clases entidad un objeto de tipo lista de la entidad a la cual está relacionada, etiquetada con la anotación #[b #[i @ManyToMany]]. Adicionalmente, en una de las clases de entidad se deberá especificar el objeto de mapeo del otro extremo que será utilizado por Hibernate para realizar la asociación.
+                p.mb-0 Las relaciones #[b #[i ManyToMany]] obligan a la construcción de una nueva entidad de mapeo en la cual se alojarán las respectivas llaves primarias de las entidades vinculadas por medio de la relación #[b #[i ManyToMany]]. Para su correcta implementación, deberán agregarse en cada una de las clases entidad un objeto de tipo lista de la entidad a la cual está relacionada, etiquetada con la anotación #[b #[i ManyToMany]]. Adicionalmente, en una de las clases de entidad se deberá especificar el objeto de mapeo del otro extremo que será utilizado por Hibernate para realizar la asociación.
             .col-lg-2.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
               figure
                 img(src='@/assets/curso/tema4/img21.svg', style='width: 200px', alt='').m-auto
@@ -880,7 +880,7 @@
                 img(src='@/assets/curso/tema4/img22.svg', style='width: 200px', alt='').m-auto
             .col-lg-10(data-aos="fade-left")
               .p-4.bg-c46
-                p.mb-0 En el ejemplo siguiente, se establece una relación ManyToMany entre la clase Usuario y la clase Recurso, por lo cual en cada una de ellas se agrega la correspondiente lista del tipo de entidad a la cual se asocian con la anotación #[b #[i @ManyToMany]]. En el caso de la clase Usuario, se agrega el atributo de tipo lista de Recursos llamado recursos para indicar que un usuario puede estar vinculado con muchos recursos. Por otro lado, en la clase Recurso se agrega una lista de tipo Usuario para indicar que un recurso puede estar vinculado con múltiples usuarios. Adicionalmente, la relación entre usuario y recurso se mapea con el objeto users presente en la clase Recurso. La relación entre recurso y usuario no se mapea explícitamente, por lo que generará la tabla intermedia recurso_usuario, lo cual cumple las reglas de transformación de un modelo lógico para una relación de muchos a muchos.
+                p.mb-0 En el ejemplo siguiente, se establece una relación #[b #[i ManyToMany]] entre la clase Usuario y la clase Recurso, por lo cual en cada una de ellas se agrega la correspondiente lista del tipo de entidad a la cual se asocian con la anotación #[b #[i ManyToMany]]. En el caso de la clase Usuario, se agrega el atributo de tipo lista de Recursos llamado recursos para indicar que un usuario puede estar vinculado con muchos recursos. Por otro lado, en la clase Recurso se agrega una lista de tipo Usuario para indicar que un recurso puede estar vinculado con múltiples usuarios. Adicionalmente, la relación entre usuario y recurso se mapea con el objeto #[b users] presente en la clase Recurso. La relación entre recurso y usuario no se mapea explícitamente, por lo que generará la tabla intermedia #[b recurso_usuario], lo cual cumple las reglas de transformación de un modelo lógico para una relación de muchos a muchos.
     .row.justify-content-center
       .col-lg-10(data-aos="fade-down")
         .p-4.p-lg-5.bg-c4
@@ -903,13 +903,13 @@
             p.mb-0 Corresponde al primer estado de un objeto de entidad y sucede cuando instanciamos y manipulamos el objeto de tipo entidad sin conectarlo por medio de la sesión a un registro de la base de datos. Así, cualquier manipulación de este objeto no afecta la base de datos. En este estado, un objeto de tipo entidad se comporta como cualquier otro objeto JAVA.
           .tarjeta.color-acento-botones.p-4(titulo="Estado persistente")
             p #[b Estado persistente]
-            p.mb-0 Corresponde al estado que logra el objeto una vez se conecta con una sesión de #[b #[i Hibernate]], lo cual ocurre cuando se invoca, por ejemplo, una operación de tipo #[b #[i save()]] o cuando el objeto fue producto de realizar un proceso de consulta a la base de datos por un método #[b #[i get()]]. Todos los cambios que se realizan sobre un objeto en estado persistente son observados por #[b #[i Hibernate]] y podrán eventualmente realizar modificaciones en la base de datos.
+            p.mb-0 Corresponde al estado que logra el objeto una vez se conecta con una sesión de #[b Hibernate], lo cual ocurre cuando se invoca, por ejemplo, una operación de tipo #[b save()] o cuando el objeto fue producto de realizar un proceso de consulta a la base de datos por un método #[b get()]. Todos los cambios que se realizan sobre un objeto en estado persistente son observados por #[b  Hibernate] y podrán eventualmente realizar modificaciones en la base de datos.
           .tarjeta.color-acento-botones.p-4(titulo="Estado independiente")
             p #[b Estado independiente]
-            p.mb-0 A este estado pasan los objetos en estado persistente una vez se realiza un cierre de sesión y en este momento son dejados de observar por #[b #[i Hibernate]] y cualquier cambio no será propagado en la base de datos. Un objeto independiente puede volver a ser persistente una vez se vuelva a abrir una nueva sesión y se use uno de los siguientes métodos: #[b #[i save()]] o #[b #[i merge()]].
+            p.mb-0 A este estado pasan los objetos en estado persistente una vez se realiza un cierre de sesión y en este momento son dejados de observar por #[b Hibernate] y cualquier cambio no será propagado en la base de datos. Un objeto independiente puede volver a ser persistente una vez se vuelva a abrir una nueva sesión y se use uno de los siguientes métodos: #[b save()] o #[b merge()].
           .tarjeta.color-acento-botones.p-4(titulo="Estado eliminado")
             p #[b Estado eliminado]
-            p.mb-0 Es el último estado en el ciclo de vida de un objeto de tipo entidad y ocurre cuando el objeto en cuestión es eliminado de la base de datos por medio del método #[b #[i delete()]]. Cualquier cambio realizado sobre este objeto no afectará la base de datos.
+            p.mb-0 Es el último estado en el ciclo de vida de un objeto de tipo entidad y ocurre cuando el objeto en cuestión es eliminado de la base de datos por medio del método #[b delete()]. Cualquier cambio realizado sobre este objeto no afectará la base de datos.
       .col-lg-3.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
           img(src='@/assets/curso/tema4/img13.png', style='width: 300px', alt='')

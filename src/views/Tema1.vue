@@ -9,7 +9,7 @@
     .row.bg-c3
       .col-12
         .px-5
-          p.mb-5(data-aos="fade-right") Cuando se habla de JDBC (#[i Java Database Connectivity]), se hace referencia a un driver que encapsula un conjunto de clases e interfaces escritas en Java, creadas para establecer conexiones, enviar sentencias SQL y procesar los datos resultantes sobre bases de datos relacionales.
+          p.mb-5(data-aos="fade-right") Cuando se habla de JDBC (#[i Java Database Connectivity]), se hace referencia a un #[i driver] que encapsula un conjunto de clases e interfaces escritas en Java, creadas para establecer conexiones, enviar sentencias SQL y procesar los datos resultantes sobre bases de datos relacionales.
           .row.justify-content-center.mb-5
             .col-lg-8
               .p-4.bg-c4(data-aos="fade-down")
@@ -25,7 +25,7 @@
               .p-4.bg-c5
                 figure.mb-4
                   img(src="@/assets/curso/tema1/img4.svg", style="width: 80px", alt="alt")
-                p.mb-0 Manejar manuelmente las conexiones y desconexiones a la base de datos.
+                p.mb-0 Manejar manualmente las conexiones y desconexiones a la base de datos.
             .col-md-6.col-lg.mb-4.mb-lg-0
               .p-4.bg-c5
                 figure.mb-4
@@ -50,8 +50,8 @@
                       img(src="@/assets/curso/tema1/img8.svg", style="width: 100px", alt="").m-auto
                   .col
                     p.text-white.mb-0 #[b Tenga presente]
-                    p.text-white.mb-0 Cada sistema gestor de base de datos (SGBD) provee su propio JDBC para la manipulación de sus sistemas con la aplicación Java. Dependiendo de la base de datos a la que se desee conectar, se debe descargar el driver J DBC correspondiente.
-          p.mb-5(data-aos="fade-right") La siguiente tabla muestra las direcciones oficiales para la descarga del driver JDBC para las bases de datos relacionales más comúnmente utilizadas en la industria del software.
+                    p.text-white.mb-0 Cada sistema gestor de base de datos (SGBD) provee su propio JDBC para la manipulación de sus sistemas con la aplicación Java. Dependiendo de la base de datos a la que se desee conectar, se debe descargar el #[i driver] JDBC correspondiente.
+          p.mb-5(data-aos="fade-right") La siguiente tabla muestra las direcciones oficiales para la descarga del #[i driver] JDBC para las bases de datos relacionales más comúnmente utilizadas en la industria del software.
           .row.align-items-center
             .col-lg-3.mb-4.mb-lg-0(data-aos="fade-right")
               figure
@@ -82,7 +82,7 @@
                       tr
                         td PostgreSQL
                         td
-                          a(href="https://jdbc.postgresql.org/download.html" target="_blank") https://jdbc.postgresql.org/download.html
+                          a(href="https://jdbc.postgresql.org/download/" target="_blank") https://jdbc.postgresql.org/download/
                       tr
                         td DB2
                         td
@@ -96,22 +96,22 @@
         figure.mt-1
           img(src="@/assets/curso/tema1/img9.svg", style="width: 70px", alt="").m-auto
       .col(data-aos="fade-left")
-        p.mb-0 Además de disponer del driver JDBC correspondiente para la base de datos que se desea conectar, se requiere un conjunto adicional de clases e interfaces Java para hacer uso del driver. Para ello, es necesario importar los paquetes java.sql o javax.sql. A continuación, se describen algunas de las clases más importantes dentro de estas librerías, y otros elementos, para gestionar correctamente una base de datos por medio de JDBC.
+        p.mb-0 Además de disponer del #[i driver] JDBC correspondiente para la base de datos que se desea conectar, se requiere un conjunto adicional de clases e interfaces Java para hacer uso del #[i driver]. Para ello, es necesario importar los paquetes java.sql o javax.sql. A continuación, se describen algunas de las clases más importantes dentro de estas librerías, y otros elementos, para gestionar correctamente una base de datos por medio de JDBC.
     .row.justify-content-center.mb-5
       .col-lg-10
         TabsA.color-acento-botones(data-aos="fade-up")
           .tarjeta.color-acento-botones.p-4(titulo="DriverManager")
             p #[b DriverManager]
-            p.mb-0 Clase estática que permite la gestión del driver JDBC disponible para la aplicación. Por medio del método getConnection, crea una instancia de tipo Connection mediante la cual se realiza el flujo de envío y recibo de información hacia y desde la base de datos destino.
+            p.mb-0 Clase estática que permite la gestión del #[i driver] JDBC disponible para la aplicación. Por medio del método #[b getConnection], crea una instancia de tipo #[b Connection] mediante la cual se realiza el flujo de envío y recibo de información hacia y desde la base de datos destino.
           .tarjeta.color-acento-botones.p-4(titulo="Connection")
             p #[b Connection]
-            p.mb-0 Interfaz Java que permite establecer una conexión con una base de datos específica por medio de la cual se puede extraer información de la descripción de tablas, procedimientos almacenados y ejecutar sentencias SQL. Se instancia un objeto de este tipo invocando el método getConnection del DriverManager, al cual se le deben pasar como parámetros las credenciales (usuario y contraseña) del usuario de la base de datos destino y la cadena de conexión correspondiente.
+            p.mb-0 Interfaz Java que permite establecer una conexión con una base de datos específica por medio de la cual se puede extraer información de la descripción de tablas, procedimientos almacenados y ejecutar sentencias SQL. Se instancia un objeto de este tipo invocando el método #[b getConnection] del #[b DriverManager], al cual se le deben pasar como parámetros las credenciales (usuario y contraseña) del usuario de la base de datos destino y la cadena de conexión correspondiente.
           .tarjeta.color-acento-botones.p-4(titulo="Statement")
             p #[b Statement]
-            p.mb-0 Interfaz Java usada para la ejecución de sentencias SQL estáticas y retornar los resultados que son producidos por estas sentencias. Una instancia de este tipo se obtiene de la ejecución del método createStatement() desde una instancia de un objeto de tipo Connection.
+            p.mb-0 Interfaz Java usada para la ejecución de sentencias SQL estáticas y retornar los resultados que son producidos por estas sentencias. Una instancia de este tipo se obtiene de la ejecución del método #[b createStatement()] desde una instancia de un objeto de tipo #[b Connection].
           .tarjeta.color-acento-botones.p-4(titulo="ResultSet")
             p #[b ResultSet]
-            p.mb-0 Tipo especial de dato que representa un conjunto de datos de tipo tabular, ideal para referenciar resultados obtenidos por medio de una consulta que retorna un conjunto de datos estructurados, como, por ejemplo, los de una consulta SELECT. Un ResultSet es un apuntador, tipo cursor, direccionado a la primera posición de toda la estructura tabular que está referenciando.
+            p.mb-0 Tipo especial de dato que representa un conjunto de datos de tipo tabular, ideal para referenciar resultados obtenidos por medio de una consulta que retorna un conjunto de datos estructurados, como, por ejemplo, los de una consulta #[b SELECT]. Un #[b ResultSet] es un apuntador, tipo cursor, direccionado a la primera posición de toda la estructura tabular que está referenciando.
           .tarjeta.color-acento-botones.p-4(titulo="El método next()")
             p #[b El método next()]
             p.mb-0 Además de desplazarse una posición de forma lineal dentro de la estructura, también devuelve como resultado un valor booleano para informar si el desplazamiento realizado encontró, o no, un conjunto de datos válidos. Así es posible determinar cuándo se alcanza el final de los elementos.
@@ -120,15 +120,15 @@
         figure
           img(src="@/assets/curso/tema1/img3.png", style="width: 320px", alt="").m-auto
       .col-lg-9(data-aos="fade-left")
-        .tarjeta.color-primario.p-3
+        .tarjeta.color-primario1.p-3
           .row.justify-content-around.align-items-center
             .col-3.col-sm-2
               img(src="@/assets/curso/tema1/img11.svg")
             .col
               .row.justify-content-between.align-items-center
                 .col.mb-3.mb-sm-0
-                  h3.mb-1 Clases e interfaces Java
-                  p Para profundizar y conocer los elementos más importantes de las clases e interfaces Java más usadas, se debe visitar el documento Clases e interfaces Java, disponible en el siguiente enlace.
+                  h3.txt-c5.mb-1 Clases e interfaces Java
+                  p.text-white Para profundizar y conocer los elementos más importantes de las clases e interfaces Java más usadas, se debe visitar el documento Clases e interfaces Java, disponible en el siguiente enlace.
                 .col-sm-auto
                   a.boton.color-acento-botones(:href="obtenerLink('/downloads/anexo1.pdf')" target="_blank")
                     span Descargar
@@ -150,12 +150,12 @@
               .lista-ol--cuadro__vineta
                 span 1
               |
-              p.mb-0 Descarga del driver JDBC (Si no se tiene).
+              p.mb-0 Descarga del #[i driver] JDBC (Si no se tiene).
             li.d-flex
               .lista-ol--cuadro__vineta
                 span 2
               |
-              p.mb-0 Importar el driver descargado en las librerías del proyecto JAVA.
+              p.mb-0 Importar el #[i driver] descargado en las librerías del proyecto JAVA.
             li.d-flex
               .lista-ol--cuadro__vineta
                 span 3
@@ -165,7 +165,7 @@
               .lista-ol--cuadro__vineta
                 span 4
               |
-              p.mb-0 Inicializar el driver usando la sentencia #[b Class.forName].
+              p.mb-0 Inicializar el #[i driver] usando la sentencia #[b Class.forName].
             li.d-flex
               .lista-ol--cuadro__vineta
                 span 5

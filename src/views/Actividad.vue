@@ -11,7 +11,7 @@
       .col-12.col-md-8.col-lg-9
         .titulo-segundo
           h2 Identificación de tecnologías Java
-        p.mb-4 Fortalecer los conocimientos sobre las principales tecnologías y frameworks utilizados en el desarrollo de aplicaciones web con Java. 
+        p.mb-4 Fortalecer los conocimientos sobre las principales tecnologías y #[i frameworks] utilizados en el desarrollo de aplicaciones web con Java. 
         .tarjeta.actividad.p-3
           .row.justify-content-around.align-items-center            
             .col-sm.mb-3.mb-sm-0

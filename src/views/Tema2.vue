@@ -100,7 +100,7 @@
         .p-4.bg-c14
           figure.mb-4
             img(src="@/assets/curso/tema2/img5.svg", style="width: 80px", alt="alt")
-          p.mb-0 #[b Rendmiento:] a ciferencia de CGI (#[i Common Gateway Interface]), el rendiniento de un servlet es mucho mejor.
+          p.mb-0 #[b Rendmiento:] a diferencia de CGI (#[i Common Gateway Interface]), el rendimiento de un servlet es mucho mejor.
       .col-md-6.col-lg.mb-4.mb-lg-0
         .p-4.bg-c14
           figure.mb-4
@@ -110,7 +110,7 @@
         .p-4.bg-c14
           figure.mb-4
             img(src="@/assets/curso/tema2/img7.svg", style="width: 80px", alt="alt")
-          p.mb-0 Dado que los serviets están escritos en Java, son independentes de la plataforma.
+          p.mb-0 Dado que los serviets están escritos en Java, son independientes de la plataforma.
       .col-md-6.col-lg.mb-4.mb-lg-0
         .p-4.bg-c14
           figure.mb-4
@@ -418,7 +418,7 @@
             figure.mb-3
               img(src='@/assets/curso/tema2/img37.svg', style='width: 120px', alt='')
             p #[b Códigos]
-            p.mb-0 Brindan información general de la página y muestran lo que debe hacer el motor JSP con la página JSP. Para indicar una directiva se utiliza el símbolo arroba (@). Existen tres tipos: Page, Include y Taglib.
+            p.mb-0 Se puede introducir código Java de varias clases como variables, métodos, sentencias, etc., y ser ejecutado en el contenedor JSP.
           .tarjeta.color-acento-botones.p-4(titulo="Directivas")
             figure.mb-3
               img(src='@/assets/curso/tema2/img38.svg', style='width: 120px', alt='')

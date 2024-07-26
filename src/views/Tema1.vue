@@ -51,7 +51,7 @@
                   .col
                     p.text-white.mb-0 #[b Tenga presente]
                     p.text-white.mb-0 Cada sistema gestor de base de datos (SGBD) provee su propio JDBC para la manipulación de sus sistemas con la aplicación Java. Dependiendo de la base de datos a la que se desee conectar, se debe descargar el #[i driver] JDBC correspondiente.
-          p.mb-5(data-aos="fade-right") La siguiente tabla muestra las direcciones oficiales para la descarga del #[i driver] JDBC para las bases de datos relacionales más comúnmente utilizadas en la industria del software.
+          p.mb-5(data-aos="fade-right") La siguiente tabla muestra las direcciones oficiales para la descarga del #[i driver] JDBC para las bases de datos relacionales más comúnmente utilizadas en la industria del #[i software].
           .row.align-items-center
             .col-lg-3.mb-4.mb-lg-0(data-aos="fade-right")
               figure
